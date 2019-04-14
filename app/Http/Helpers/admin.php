@@ -1,4 +1,5 @@
 <?php
+use Spatie\Activitylog\Models\Activity;
 
 function success_data($msg, $data='')
 {
@@ -8,6 +9,19 @@ function success_data($msg, $data='')
 function error_data($msg, $data='')
 {
     return array('status' => '9999', 'msg' => $msg, 'datas' => $data);
+}
+
+//UV
+function uv()
+{
+    return \App\Models\Tool\UV::count();
+}
+
+//访问量
+function see_num($type)
+{
+    $data = Activity::where('log_name', $type)->distinct('ip')->count('ip');
+    return $data;
 }
 
 //系统文件管理
@@ -358,7 +372,7 @@ function build_image_attributes($attributes)
 function image_url($model, $attributes = [])
 {
     $attributes_html = build_image_attributes($attributes);
-    if ($model->image->identifier) {
+    if ($model->photo->identifier) {
         return ' <img src="' . env('QINIU_IMAGES_LINK') . $model->image->identifier . '" ' . $attributes_html . '>';
     }
 }
@@ -373,7 +387,7 @@ function image_url($model, $attributes = [])
 function thumb_url($model, $attributes = [])
 {
     $attributes_html = build_image_attributes($attributes);
-    if ($model->image->identifier) {
+    if ($model->photo->identifier) {
         return ' <img src="' . env('QINIU_IMAGES_LINK') . $model->image->identifier . '-thumb' . '" ' . $attributes_html . '>';
     }
 }
@@ -388,7 +402,7 @@ function thumb_url($model, $attributes = [])
 function large_url($model, $attributes = [])
 {
     $attributes_html = build_image_attributes($attributes);
-    if ($model->image->identifier) {
+    if ($model->photo->identifier) {
         return ' <img src="' . env('QINIU_IMAGES_LINK') . $model->image->identifier . '-large' . '" ' . $attributes_html . '>';
     }
 }

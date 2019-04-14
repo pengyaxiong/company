@@ -1,0 +1,4857 @@
+@charset "utf-8";
+body {
+    font-family: "微软雅黑"
+}
+a:focus {
+    outline: none;
+}
+.hide{
+    display: none;
+}
+#wrap {
+    width: 100%;
+    /*max-width: 2561920px;*/
+    max-width: 1920px;
+    min-width: 1257px;
+    background: #eff4f7;
+    margin: 0 auto;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.clearfix{
+    *zoom:1;
+}
+
+#wrap1 {
+    background: #eff4f7;
+}
+/*Header start*/
+.header {
+    background: #fff;
+    height: 115px;
+}
+.header div {
+    position: relative;
+    width: 1100px;
+    margin: 0 auto;
+}
+.header img {
+    position: absolute;
+}
+.logo {
+    top: 13px;
+    left: 3px;
+}
+.tel {
+    top: 25px;
+    right: 203px;
+}
+.code {
+    top: 20px;
+    right: 4px;
+}
+.code1 {
+    top: 20px;
+    right: 100px;
+}
+.banner{
+    position: relative;
+    height: 450px;
+    /*background: url(../images/banner.jpg) no-repeat center center;*/
+}
+.nav {
+    height: 50px;
+    width: 100%;
+    z-index: 5;
+    /*background: #90209b;*/
+    background:#601986;
+}
+.nav ul {
+    width: 1100px;
+    margin: 0 auto;
+}
+.nav li{
+    text-align: center;
+    width: 157px;
+    float: left;
+    position: relative;
+}
+.nav a {
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    line-height: 50px;
+}
+.nav a:hover{
+    background: #000000;
+}
+.nav_hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.8);
+}
+.nav .sed-nav {
+    position: absolute;
+    z-index: 10;
+    filter:none;     /*处理IE9浏览器中的滤镜效果*/
+    background-color:rgba(96,25,134,0.8);
+    filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#CC601986', endColorstr='#CC601986');
+    width: 157.143px;
+    display: none;
+}
+.nav li:hover .sed-nav{
+    display: block;
+}
+.sed-nav li{
+    float: none;
+}
+.placeholder {
+    height: 50px;
+    filter:none;     /*处理IE9浏览器中的滤镜效果*/
+    background-color:rgba(144,32,155,0.8);
+    filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#CC90209B', endColorstr='#CC90209B');
+}
+.invisible {
+    display: none;
+}
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    filter:none;     /*处理IE9浏览器中的滤镜效果*/
+    background-color:rgba(96,25,134,0.8);
+    filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#CC90209B', endColorstr='#CC90209B');
+}
+.banner_label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -400px;
+    margin-top: -84px;
+    padding: 35px 80px;
+    filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#33FFFFFF', endColorstr='#33FFFFFF');
+    filter:none;     /*处理IE9浏览器中的滤镜效果*/
+    background-color:rgba(255,255,255,0.2);
+}
+.txt_pink_b {
+    font-size: 48px;
+    color: #90209c;
+    font-weight: 800;
+}
+.txt_pink_s {
+    font-size: 22px;
+    color: #90209c;
+}
+.txt_black_b {
+    font-size: 21px;
+    color: #000000;
+    font-weight: 400;
+}
+.txt_black_s {
+    font-size: 14px;
+    color: #000000;
+}
+.xw_label {
+    top: 35%;
+    left: 50%;
+    margin-top: 0;
+    margin-left: -600px;
+    padding: 35px 80px;
+    width: 410px;
+    height: 113px;
+    filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#33FFFFFF', endColorstr='#33FFFFFF');
+    filter:none;     /*处理IE9浏览器中的滤镜效果*/
+    background-color:rgba(255,255,255,0.2);
+}
+.hd_label {
+    padding: 35px 40px;
+    width: 560px;
+}
+/*Header end*/
+/*footer 版权样式 start*/
+.copyright {
+    height: auto;
+    background: #333333;
+}
+.copyright a{
+    color: #9e9e9e;
+    font-size: 12px;
+}
+.copyright span {
+    font-size: 14px;
+    color: #fff;
+}
+.link_set {
+    width: 1100px;
+    margin: 0 auto;
+}
+.yq_link {
+    padding: 30px 25px;
+    border-bottom: 1px solid #4c4c4c;
+}
+
+.yq_link a {
+    padding:0 8px;
+}
+.yq_link a:hover {
+    text-decoration: underline;
+}
+.cr_corp {
+    padding: 48px 0;
+    height: 132px;
+}
+.cr_corp div {
+    width: 85px;
+    padding: 0 30px;
+    border-right: 1px solid #3f3f3f;
+    float: left;
+}
+.cr_corp span {
+    margin-bottom: 33px;
+    display: inline-block;
+     *zoom:1;
+     *display:inline;
+}
+.cr_corp li {
+    line-height: 26px;
+}
+.cr_corp .tel_num {
+    width: 215px;
+}
+.cr_corp .tel_num,.cr_corp .attention {
+    border: 0;
+}
+.tel_num span{
+    display: block;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.tel_num .yxrx {
+    font-size: 24px;
+    color: #6f6f6f;
+}
+.yxrx {
+    /*background: url(../images/tel_num.png) no-repeat center left;*/
+    padding-left: 44px;
+    height: 35px;
+    line-height: 35px;
+}
+.cr_corp .attention {
+    width: 232px;
+    padding: 0;
+}
+.attention img {
+    padding-left: 10px;
+}
+/*footer 版权样式 end*/
+/*新闻内页 start*/
+.news_wrap {
+    position: relative;
+    width: 1100px;
+    margin: 50px auto 75px;
+    background: #eff4f7;
+}
+
+.time_line {
+    width: 255px;
+    height: 2250px;
+    /*background: url(../images/time_bg.png) no-repeat;*/
+    margin: 0 auto;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: "微软雅黑";
+    text-align: center;
+    position: relative;
+}
+.time_line span {
+    position: absolute;
+    /*background: url(../images/year_bg.png) no-repeat center center;*/
+    display: block;
+    width: 73px;
+    height: 73px;
+    line-height: 73px;
+    padding: 0 91px;
+    top: 0
+}
+/*.time_line .time_end {
+    top: 1956px;
+}*/
+.time_start,.time_end {
+    /*background: url(../images/year_bg.png);*/
+    left: 50%;
+    position: absolute;
+    margin-left: -36px;
+    font-size: 16px;
+    color: #fff;
+    padding: 27.5px 19px;
+}
+.time_start {
+    top: 0;
+}
+/*.time_end {
+    bottom: 0;
+}*/
+.time_loading {
+    background:#eff4f7 url("../images/loading.png")/*tpa=http://www.sanyi.org/images/loading.png*/ no-repeat;
+    width: 162px;
+    height: 85px;
+    position: absolute;
+    left: 50%;
+    margin-left: -81px;
+    bottom: 0;
+    cursor: pointer;
+    display:none;
+    z-index:10
+}
+.conLoad{
+	background:#eff4f7 url("../images/conLoad.png")/*tpa=http://www.sanyi.org/images/conLoad.png*/ no-repeat;
+    width: 162px;
+    height: 85px;
+    position: absolute;
+    left: 50%;
+    margin-left: -81px;
+    bottom: 0;
+    cursor: pointer;
+    z-index:0
+}
+.time_line a {
+    position: absolute;
+    left: 120px;
+    display: block;
+    width: 12px;
+    height: 12px;
+    /*background: url(../images/year.png) no-repeat center;*/
+}
+.time_line a:hover {
+    /*background: url(../images/year_hover.png) no-repeat center;*/
+}
+.time_news {
+    width: 1100px;
+    height: 100%;
+    background: url("../images/time_line.png")/*tpa=http://www.sanyi.org/images/time_line.png*/ repeat-y center;
+}
+.news_list {
+    position: relative;
+    width: 313px;
+    height: 449px;
+    background: #fff;
+    padding: 40px 47px;
+    font-family: "微软雅黑";
+    cursor: pointer;
+    margin-top: 106px;
+}
+.news_list.hover {
+    -moz-box-shadow:0 0 2px 2px #90209b;
+    -webkit-box-shadow:0 0 2px 2px #90209b;
+    box-shadow:0 0 2px 2px #90209b;
+    /*border: 1px solid #90209b;*/
+
+}
+.news_list .news_btn {
+    display: block;
+    width: 106px;
+    height: 30px;
+    background: #999999;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+.news_list .news_btn:hover {
+    background: #90209b;
+}
+.news_list h3 {
+    font-size: 20px;
+    padding-bottom: 14px;
+    border-bottom: 1px dotted #dfdfdf;
+}
+.news_list .news_time {
+    font-size: 14px;
+    color: #8c8c8c;
+    padding: 12px 0 10px 0;
+    display: block;
+}
+.news_list p {
+    color: #333333;
+    font-size: 14px;
+    padding: 20px 0;
+    line-height: 22px;
+}
+.time_point {
+    position: absolute;
+
+    top: 48px;
+    width: 89px !important;
+    background: #eff4f7 url("../images/year.png")/*tpa=http://www.sanyi.org/images/year.png*/ no-repeat 39px 20px;
+    cursor: pointer;
+}
+.time_point.hover {
+    background:#eff4f7  url("../images/year_hover.png")/*tpa=http://www.sanyi.org/images/year_hover.png*/ no-repeat 39px 20px;
+}
+.arrow_line {
+    position: absolute;
+
+    display: inline-block !important;
+    *zoom:1;
+    *display:inline;
+    height: 25px;
+    width: 118px;
+}
+.time_point .time_date {
+    display: inline-block;
+    *zoom:1;
+    *display:inline;
+    color: #999999;
+    font-size: 16px;
+    padding: 46px 0 20px;
+}
+
+/*新闻内页 end*/
+/*图文详情 start*/
+.tm_banner {
+    position: relative;
+    height: 5200px;
+    background: url("../images/teenmembership.jpg")/*tpa=http://www.sanyi.org/images/teenmembership.jpg*/ no-repeat center center;
+}
+.us1_banner {
+    position: relative;
+    height: 6700px;
+    background: url("../images/us1_content.jpg")/*tpa=http://www.sanyi.org/images/us1_content.jpg*/ no-repeat center center;
+}
+.au1_banner {
+    position: relative;
+    height: 6700px;
+    background: url("../images/au1_content.jpg")/*tpa=http://www.sanyi.org/images/au1_content.jpg*/ no-repeat center center;
+}
+.xq_banner {
+    position: relative;
+    height: 6705px;
+    background: url("../images/banner2.jpg")/*tpa=http://www.sanyi.org/images/banner2.jpg*/ no-repeat center center;
+}
+.general_banner {
+    position: relative;
+}
+.act_banner {
+    position: relative;
+    width: 100%;
+    height: 707px;
+    background: url("../images/act201811_b1.jpg")/*tpa=http://www.sanyi.org/images/act201811_b1.jpg*/ no-repeat center center;
+}
+.xq_wrap {
+    width: 1100px;
+    margin: 0 auto;
+    background: #ffffff;
+    margin-top: 10px;
+}
+.news_con {
+    width: 721px;
+    float: left;
+    border-right: 1px dotted #ececec;
+    padding: 10px 34px;
+    font-family: "微软雅黑";
+}
+.news_con h3 {
+    font-size: 25px;
+    color: #333333;
+    padding-bottom: 12px;
+    border-bottom: none;
+}
+.news_con .time,.date {
+    font-size: 16px;
+    color: #8c8c8c;
+    padding: 8px 0;
+    display: block;
+}
+.news_con .time {
+    font-size: 12px;
+    color: #b4b4b4;
+}
+.news_con p {
+    /*以下两列被comment out因为会影响从秀米以及微信粘贴过来的格式*/
+    /*color: #333333;*/
+    /*font-size: 16px;*/
+    line-height: 24px;
+}
+.news_con h4 {
+    font-size: 30px;
+    font-weight: normal;
+   margin-top: 30px;
+}
+.par_set {
+   padding: 22px 0;
+}
+.side_con {
+    width: 210px;
+    float: left;
+    padding: 11px 45px 26px;
+    font-family: "微软雅黑"
+}
+.info_box {
+    margin-bottom: 10px;
+    height: 54px;
+}
+.input_box {
+    width: 250px;
+}
+.side_con input {
+    border: 1px solid #c2c2c2;
+    width: 204px;
+    padding: 10px;
+    /*margin-bottom: 10px;*/
+}
+.error_info {
+    color: #ea0000;
+    display: block;
+    margin: 2px 0px 4px;
+}
+.error_info.hide{
+    display: none;
+}
+.err-img {
+    height: 17px;
+    width: 17px;
+    position: absolute;
+    background-image: url("../images/error-image.png")/*tpa=http://www.sanyi.org/images/error-image.png*/;
+    background-repeat: no-repeat;
+    margin: 10px;
+}
+.peitu img {
+    float: left;
+    margin-right: 10px;
+}
+.side_con h3 {
+    font-size: 20px;
+    padding: 15px 0;
+}
+.side_con p {
+    padding: 10px 0;
+    line-height: 20px;
+}
+.side_con a {
+    display: inline-block;
+     *zoom:1;
+     *display:inline;
+    padding: 9px 24px;
+    background: #999999;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.side_con a:hover {
+    background: #90209b;
+}
+.video_wrap span {
+    font-size: 14px;
+    color: #333333;
+    padding-top: 10px;
+    display: block;
+}
+.video_wrap a{
+    margin-bottom: 20px;
+}
+.video_wrap img {
+    cursor: pointer;
+}
+.dash {
+    border-top: 1px dashed #bbbbbb;
+}
+.side_con i {
+    /*background: url(../images/tips.png);*/
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    right: -13px;
+    top: 9px;
+    cursor: pointer;
+    z-index: 2
+}
+.tips_set{
+    position: relative;
+}
+.tips_con {
+    padding: 15px;
+    background: #a2988c;
+    position: absolute;
+    top:-62px;
+    right: -22px;
+    width: 150px;
+    color: #fff;
+    z-index: 3;
+    display: none;
+    line-height: 16px;
+}
+.arrow {
+    width: 21px;
+    height: 11px;
+    background: url("../images/arrow.png")/*tpa=http://www.sanyi.org/images/arrow.png*/;
+    position: absolute;
+}
+.arrow {
+    bottom: -10px;
+    right: 8px;
+}
+/*图文详情 end*/
+/*新闻页面二级导航 start*/
+.xw_banner {
+    background: url("../images/banner.jpg")/*tpa=http://www.sanyi.org/images/banner.jpg*/ no-repeat center;
+}
+/*新闻页面二级导航 end*/
+
+/*活动页面二级导航 start*/
+.hd_banner {
+    background: url("../images/banner3.jpg")/*tpa=http://www.sanyi.org/images/banner3.jpg*/ no-repeat center;
+}
+.hd_wrap {
+    width:100%;
+    font-family: "微软雅黑";
+    background: #fff;
+    padding-top: 63px;
+}
+.hd_wrap h3 {
+    font-size: 0;
+    text-indent: -9999px;
+    height: 57px;
+}
+.up_event {
+    width: 1100px;
+    margin:0 auto;
+   margin-bottom: 45px;
+}
+.up_event h3 {
+    /*background: url(../images/hd_title1.png) no-repeat;*/
+    margin-bottom: 50px;
+}
+.up_news {
+    width: 528px;
+    height: 320px;
+    float: left;
+    background: #eff4f7;
+    position: relative;
+}
+.up_news1 {
+    margin-right: 42px;
+}
+.up_news span {
+ font-size: 17px;
+ margin:26px 10px;
+ display: block;
+ float: left;    
+ font-weight: bold;
+
+}
+.up_news .up_news_click {
+    display: block;
+    float: right;
+    padding: 7px 20px;
+
+    background: #999999;
+    font-size: 16px;
+    color: #fff;
+    position: absolute;
+    top:270px;
+    left:378px;
+}
+
+.up_news:hover .up_news_click {
+    background: #90209b
+}
+.past_event {
+    background: #eff4f7;
+    padding: 68px 0 75px;
+}
+.past_eve_main {
+    width: 1100px;
+    margin:0 auto;
+}
+.past_event h3 {
+    /*background: url(../images/hd_title2.png) no-repeat;*/
+   margin-bottom:50px;
+   /*padding-bottom: 50px;*/
+}
+
+.silde_con {
+    position: relative;
+}
+.silde_main {
+    width: 1100px;
+   height: 490px;
+    overflow: hidden;
+    position: relative;
+}
+.silde_main ul {
+    position: absolute;
+    left: 0;
+}
+.silde_con li {
+    width: 352px;
+    height: 490px;
+    background: #dae3e8;
+    float: left;
+    margin: 0 7px;
+}
+.silde_con li div {
+    padding: 24px 22px;
+}
+.silde_con ul {
+    /*width: 2200px;*/
+    overflow: hidden;
+    height: auto;
+}
+
+.silde_con h4 {
+    font-size: 22px;
+    padding: 0 0 14px;
+    color: #666666
+}
+.silde_con p {
+    font-size: 16px;
+    line-height: 24px;
+}
+.past_event_sub{
+    position: relative;
+}
+.silde_con li .past_event_click {
+    padding: 7px 20px;
+    background: #999999;
+    font-size: 16px;
+    color: #fff;
+    display: block;
+    width: 64px;
+    float: right;
+    position: absolute;
+    left: 228px;
+    top: 196px;
+
+}
+.silde_con li:hover .past_event_click {
+    background: #90209b
+}
+.silde_con .slide_btn{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    display: block;
+    top: 160px;
+}
+.prev {
+    /*background: url(../images/prev.png);*/
+    left: 0;
+    margin-left: -70px;
+}
+.next {
+    /*background: url(../images/next.png);*/
+    right: 0;
+    margin-right: -70px;
+}
+.prev:hover {
+    display:block;
+    background:transparent  url("../images/csg.png")/*tpa=http://www.sanyi.org/images/csg.png*/ no-repeat top left;
+    background-position: 0 -761px;
+    width: 70px; height: 70px;
+
+}
+.next:hover {
+    display:block;
+    background:transparent  url("../images/csg.png")/*tpa=http://www.sanyi.org/images/csg.png*/ no-repeat top left;
+    background-position: 0 -619px;
+    width: 70px; height: 70px;
+}
+.down_form {
+    width: 404px;
+    float: none;
+}
+.down_form input {
+    width: 404px;
+}
+.down_form .input_box {
+    width: 427px;
+}
+.down_form .info_box {
+  height: 50px;
+}
+/*活动页面二级导航 end*/
+/*首页 start*/
+/*.sy_banner {
+    background: url(../images/banner4.jpg) no-repeat center;
+}*/
+.sy_wrap h2 {
+    font-size: 0;
+    text-indent: -9999em;
+    height: 60px;
+    margin: 0 auto
+}
+.sy_wrap h3 {
+    font-size: 0;
+    text-indent: -9999em;
+    height: 35px;
+    margin: 0 auto
+}
+.feat_main div {
+    width: 365px;
+    float: left;
+}
+.feat_main .item_pic {
+    display: block;
+    width: 182px;
+    height: 183px;
+    background: url("../images/per.jpg")/*tpa=http://www.sanyi.org/images/per.jpg*/ no-repeat;
+    margin: 0 92px;
+}
+.item {
+    position: absolute;
+    margin-top: 45px;
+    border-right: 1px dashed #dcdcdc;
+    position: relative;
+}
+.per_hover {
+    position: absolute;
+    top: 0px;
+    left: 92px;
+    display: none;
+}
+
+/* index和projects的图 */
+.items1 .item_pic{
+    background-position: 0 0
+}
+.items2 .item_pic{
+
+    background-position: 0 -182px;
+}
+.items3 {border-right: 0}
+.items3 .item_pic{
+    background-position: 0px -364px;
+}
+
+.items4 .item_pic{
+    background-position: 0 -546px;
+}
+.items5 .item_pic{
+
+    background-position: 0 -728px;
+}
+.items6 {border-right: 0}
+.items6 .item_pic{
+    background-position: 0px -910px;
+}
+
+.items7 .item_pic{
+    background-position: 0 -1092px;
+}
+.items8 .item_pic{
+
+    background-position: 0 -1274px;
+}
+.items9 {border-right: 0}
+.items9 .item_pic{
+    background-position: 0px -1456px;
+}
+
+.items10 .item_pic{
+    background-position: 0 -1638px;
+}
+.items11 .item_pic{
+
+    background-position: 0 -1820px;
+}
+.items12 {border-right: 0}
+.items12 .item_pic{
+    background-position: 0px -2002px;
+}
+
+/* 青少年夏季游学 Starts */
+
+/* 青少年夏季美国游学 Starts */
+
+.item_US_A_1 .item_US_A_pic{
+    background-position: 0px 0px;
+}
+.item_US_A_2 .item_US_A_pic{
+    background-position: -182px 0px;
+}
+.item_US_A_3 {border-right: 0}
+.item_US_A_3 .item_US_A_pic{
+    background-position: -364px 0px;
+}
+
+.item_US_A_4 .item_US_A_pic{
+    background-position: -546px 0px;
+}
+.item_US_A_5 .item_US_A_pic{
+    background-position: -728px 0px;
+}
+.item_US_A_6 {border-right: 0}
+.item_US_A_6 .item_US_A_pic{
+    background-position: -910px 0px;
+}
+
+.item_US_A_7 .item_US_A_pic{
+    background-position: -1092px 0px;
+}
+.item_US_A_8 .item_US_A_pic{
+    background-position: -1274px 0px;
+}
+.item_US_A_9 {border-right: 0}
+.item_US_A_9 .item_US_A_pic{
+    background-position: -1456px 0px;
+}
+
+.item_US_A_10 .item_US_A_pic{
+    background-position: -1638px 0px;
+}
+.item_US_A_11 .item_US_A_pic{
+    background-position: -1820px 0px;
+}
+.item_US_A_12 {border-right: 0}
+.item_US_A_12 .item_US_A_pic{
+    background-position: -2002px 0px;
+}
+
+.item_US_A_13 .item_US_A_pic{
+    background-position: 0px -182px;
+}
+.item_US_A_14 .item_US_A_pic{
+    background-position: -182px -182px;
+}
+.item_US_A_15 {border-right: 0}
+.item_US_A_15 .item_US_A_pic{
+    background-position: -364px -182px;
+}
+
+.item_US_A_16 .item_US_A_pic{
+    background-position: -546px -182px;
+}
+.item_US_A_17 .item_US_A_pic{
+    background-position: -728px -182px;
+}
+.item_US_A_18 {border-right: 0}
+.item_US_A_18 .item_US_A_pic{
+    background-position: -910px -182px;
+}
+
+.item_US_A_19 .item_US_A_pic{
+    background-position: -1092px -182px;
+}
+.item_US_A_20 .item_US_A_pic{
+    background-position: -1274px -182px;
+}
+.item_US_A_21 {border-right: 0}
+.item_US_A_21 .item_US_A_pic{
+    background-position: -1456px -182px;
+}
+
+.item_US_A_22 .item_US_A_pic{
+    background-position: -1638px -182px;
+}
+.item_US_A_23 .item_US_A_pic{
+    background-position: -1820px -182px;
+}
+.item_US_A_24 {border-right: 0}
+.item_US_A_24 .item_US_A_pic{
+    background-position: -2002px -182px;
+}
+
+.item_US_A_25 .item_US_A_pic{
+    background-position: 0px -364px;
+}
+.item_US_A_26 .item_US_A_pic{
+    background-position: -182px -364px;
+}
+.item_US_A_27 {border-right: 0}
+.item_US_A_27 .item_US_A_pic{
+    background-position: -364px -364px;
+}
+
+.item_US_A_28 .item_US_A_pic{
+    background-position: -546px -364px;
+}
+.item_US_A_29 .item_US_A_pic{
+    background-position: -728px -364px;
+}
+.item_US_A_30 {border-right: 0}
+.item_US_A_30 .item_US_A_pic{
+    background-position: -910px -364px;
+}
+
+.item_US_A_31 .item_US_A_pic{
+    background-position: -1092px -364px;
+}
+.item_US_A_32 .item_US_A_pic{
+    background-position: -1274px -364px;
+}
+.item_US_A_33 {border-right: 0}
+.item_US_A_33 .item_US_A_pic{
+    background-position: -1456px -364px;
+}
+
+.item_US_A_34 .item_US_A_pic{
+    background-position: -1638px -364px;
+}
+.item_US_A_35 .item_US_A_pic{
+    background-position: -1820px -364px;
+}
+.item_US_A_36 {border-right: 0}
+.item_US_A_36 .item_US_A_pic{
+    background-position: -2002px -364px;
+}
+
+.item_US_A_37 .item_US_A_pic{
+    background-position: 0px -546px;
+}
+.item_US_A_38 .item_US_A_pic{
+    background-position: -182px -546px;
+}
+.item_US_A_39 {border-right: 0}
+.item_US_A_39 .item_US_A_pic{
+    background-position: -364px -546px;
+}
+
+.item_US_A_40 .item_US_A_pic{
+    background-position: -546px -546px;
+}
+.item_US_A_41 .item_US_A_pic{
+    background-position: -728px -546px;
+}
+.item_US_A_42 {border-right: 0}
+.item_US_A_42 .item_US_A_pic{
+    background-position: -910px -546px;
+}
+
+.item_US_A_43 .item_US_A_pic{
+    background-position: -1092px -546px;
+}
+.item_US_A_44 .item_US_A_pic{
+    background-position: -1274px -546px;
+}
+.item_US_A_45 {border-right: 0}
+.item_US_A_45 .item_US_A_pic{
+    background-position: -1456px -546px;
+}
+
+.item_US_A_46 .item_US_A_pic{
+    background-position: -1638px -546px;
+}
+.item_US_A_47 .item_US_A_pic{
+    background-position: -1820px -546px;
+}
+.item_US_A_48 {border-right: 0}
+.item_US_A_48 .item_US_A_pic{
+    background-position: -2002px -546px;
+}
+
+.item_US_A_49 .item_US_A_pic{
+    background-position: 0px -728px;
+}
+.item_US_A_50 .item_US_A_pic{
+    background-position: -182px -728px;
+}
+.item_US_A_51 {border-right: 0}
+.item_US_A_51 .item_US_A_pic{
+    background-position: -364px -728px;
+}
+
+.item_US_A_52 .item_US_A_pic{
+    background-position: -546px -728px;
+}
+.item_US_A_53 .item_US_A_pic{
+    background-position: -728px -728px;
+}
+.item_US_A_54 {border-right: 0}
+.item_US_A_54 .item_US_A_pic{
+    background-position: -910px -728px;
+}
+
+.item_US_A_55 .item_US_A_pic{
+    background-position: -1092px -728px;
+}
+.item_US_A_56 .item_US_A_pic{
+    background-position: -1274px -728px;
+}
+.item_US_A_57 {border-right: 0}
+.item_US_A_57 .item_US_A_pic{
+    background-position: -1456px -728px;
+}
+
+.item_US_A_58 .item_US_A_pic{
+    background-position: -1638px -728px;
+}
+.item_US_A_59 .item_US_A_pic{
+    background-position: -1820px -728px;
+}
+.item_US_A_60 {border-right: 0}
+.item_US_A_60 .item_US_A_pic{
+    background-position: -2002px -728px;
+}
+
+
+
+.feat_main .item_US_B_pic {
+    display: block;
+    width: 182px;
+    height: 182px;
+    background: url("../images/thumbnails_teen_US_B.jpg")/*tpa=http://www.sanyi.org/images/thumbnails_teen_US_B.jpg*/ no-repeat;
+    margin: 0 92px;
+}
+
+.item_US_B_1 .item_US_B_pic{
+    background-position: 0px 0px;
+}
+.item_US_B_2 .item_US_B_pic{
+    background-position: -182px 0px;
+}
+.item_US_B_3 {border-right: 0}
+.item_US_B_3 .item_US_B_pic{
+    background-position: -364px 0px;
+}
+
+.item_US_B_4 .item_US_B_pic{
+    background-position: -546px 0px;
+}
+.item_US_B_5 .item_US_B_pic{
+    background-position: -728px 0px;
+}
+.item_US_B_6 {border-right: 0}
+.item_US_B_6 .item_US_B_pic{
+    background-position: -910px 0px;
+}
+
+.item_US_B_7 .item_US_B_pic{
+    background-position: -1092px 0px;
+}
+.item_US_B_8 .item_US_B_pic{
+    background-position: -1274px 0px;
+}
+.item_US_B_9 {border-right: 0}
+.item_US_B_9 .item_US_B_pic{
+    background-position: -1456px 0px;
+}
+
+.item_US_B_10 .item_US_B_pic{
+    background-position: -1638px 0px;
+}
+.item_US_B_11 .item_US_B_pic{
+    background-position: -1820px 0px;
+}
+.item_US_B_12 {border-right: 0}
+.item_US_B_12 .item_US_B_pic{
+    background-position: -2002px 0px;
+}
+
+.item_US_B_13 .item_US_B_pic{
+    background-position: 0px -182px;
+}
+.item_US_B_14 .item_US_B_pic{
+    background-position: -182px -182px;
+}
+.item_US_B_15 {border-right: 0}
+.item_US_B_15 .item_US_B_pic{
+    background-position: -364px -182px;
+}
+
+.item_US_B_16 .item_US_B_pic{
+    background-position: -546px -182px;
+}
+.item_US_B_17 .item_US_B_pic{
+    background-position: -728px -182px;
+}
+.item_US_B_18 {border-right: 0}
+.item_US_B_18 .item_US_B_pic{
+    background-position: -910px -182px;
+}
+
+.item_US_B_19 .item_US_B_pic{
+    background-position: -1092px -182px;
+}
+.item_US_B_20 .item_US_B_pic{
+    background-position: -1274px -182px;
+}
+.item_US_B_21 {border-right: 0}
+.item_US_B_21 .item_US_B_pic{
+    background-position: -1456px -182px;
+}
+
+.item_US_B_22 .item_US_B_pic{
+    background-position: -1638px -182px;
+}
+.item_US_B_23 .item_US_B_pic{
+    background-position: -1820px -182px;
+}
+.item_US_B_24 {border-right: 0}
+.item_US_B_24 .item_US_B_pic{
+    background-position: -2002px -182px;
+}
+
+.item_US_B_25 .item_US_B_pic{
+    background-position: 0px -364px;
+}
+.item_US_B_26 .item_US_B_pic{
+    background-position: -182px -364px;
+}
+.item_US_B_27 {border-right: 0}
+.item_US_B_27 .item_US_B_pic{
+    background-position: -364px -364px;
+}
+
+.item_US_B_28 .item_US_B_pic{
+    background-position: -546px -364px;
+}
+.item_US_B_29 .item_US_B_pic{
+    background-position: -728px -364px;
+}
+.item_US_B_30 {border-right: 0}
+.item_US_B_30 .item_US_B_pic{
+    background-position: -910px -364px;
+}
+
+.item_US_B_31 .item_US_B_pic{
+    background-position: -1092px -364px;
+}
+.item_US_B_32 .item_US_B_pic{
+    background-position: -1274px -364px;
+}
+.item_US_B_33 {border-right: 0}
+.item_US_B_33 .item_US_B_pic{
+    background-position: -1456px -364px;
+}
+
+.item_US_B_34 .item_US_B_pic{
+    background-position: -1638px -364px;
+}
+.item_US_B_35 .item_US_B_pic{
+    background-position: -1820px -364px;
+}
+.item_US_B_36 {border-right: 0}
+.item_US_B_36 .item_US_B_pic{
+    background-position: -2002px -364px;
+}
+
+.item_US_B_37 .item_US_B_pic{
+    background-position: 0px -546px;
+}
+.item_US_B_38 .item_US_B_pic{
+    background-position: -182px -546px;
+}
+.item_US_B_39 {border-right: 0}
+.item_US_B_39 .item_US_B_pic{
+    background-position: -364px -546px;
+}
+
+.item_US_B_40 .item_US_B_pic{
+    background-position: -546px -546px;
+}
+.item_US_B_41 .item_US_B_pic{
+    background-position: -728px -546px;
+}
+.item_US_B_42 {border-right: 0}
+.item_US_B_42 .item_US_B_pic{
+    background-position: -910px -546px;
+}
+
+.item_US_B_43 .item_US_B_pic{
+    background-position: -1092px -546px;
+}
+.item_US_B_44 .item_US_B_pic{
+    background-position: -1274px -546px;
+}
+.item_US_B_45 {border-right: 0}
+.item_US_B_45 .item_US_B_pic{
+    background-position: -1456px -546px;
+}
+
+.item_US_B_46 .item_US_B_pic{
+    background-position: -1638px -546px;
+}
+.item_US_B_47 .item_US_B_pic{
+    background-position: -1820px -546px;
+}
+.item_US_B_48 {border-right: 0}
+.item_US_B_48 .item_US_B_pic{
+    background-position: -2002px -546px;
+}
+
+.item_US_B_49 .item_US_B_pic{
+    background-position: 0px -728px;
+}
+.item_US_B_50 .item_US_B_pic{
+    background-position: -182px -728px;
+}
+.item_US_B_51 {border-right: 0}
+.item_US_B_51 .item_US_B_pic{
+    background-position: -364px -728px;
+}
+
+.item_US_B_52 .item_US_B_pic{
+    background-position: -546px -728px;
+}
+.item_US_B_53 .item_US_B_pic{
+    background-position: -728px -728px;
+}
+.item_US_B_54 {border-right: 0}
+.item_US_B_54 .item_US_B_pic{
+    background-position: -910px -728px;
+}
+
+.item_US_B_55 .item_US_B_pic{
+    background-position: -1092px -728px;
+}
+.item_US_B_56 .item_US_B_pic{
+    background-position: -1274px -728px;
+}
+.item_US_B_57 {border-right: 0}
+.item_US_B_57 .item_US_B_pic{
+    background-position: -1456px -728px;
+}
+
+.item_US_B_58 .item_US_B_pic{
+    background-position: -1638px -728px;
+}
+.item_US_B_59 .item_US_B_pic{
+    background-position: -1820px -728px;
+}
+.item_US_B_60 {border-right: 0}
+.item_US_B_60 .item_US_B_pic{
+    background-position: -2002px -728px;
+}
+
+
+.feat_main .item_US_C_pic {
+    display: block;
+    width: 182px;
+    height: 182px;
+    background: url("../images/thumbnails_teen_US_C.jpg")/*tpa=http://www.sanyi.org/images/thumbnails_teen_US_C.jpg*/ no-repeat;
+    margin: 0 92px;
+}
+
+.item_US_C_1 .item_US_C_pic{
+    background-position: 0px 0px;
+}
+.item_US_C_2 .item_US_C_pic{
+    background-position: -182px 0px;
+}
+.item_US_C_3 {border-right: 0}
+.item_US_C_3 .item_US_C_pic{
+    background-position: -364px 0px;
+}
+
+.item_US_C_4 .item_US_C_pic{
+    background-position: -546px 0px;
+}
+.item_US_C_5 .item_US_C_pic{
+    background-position: -728px 0px;
+}
+.item_US_C_6 {border-right: 0}
+.item_US_C_6 .item_US_C_pic{
+    background-position: -910px 0px;
+}
+
+.item_US_C_7 .item_US_C_pic{
+    background-position: -1092px 0px;
+}
+.item_US_C_8 .item_US_C_pic{
+    background-position: -1274px 0px;
+}
+.item_US_C_9 {border-right: 0}
+.item_US_C_9 .item_US_C_pic{
+    background-position: -1456px 0px;
+}
+
+.item_US_C_10 .item_US_C_pic{
+    background-position: -1638px 0px;
+}
+.item_US_C_11 .item_US_C_pic{
+    background-position: -1820px 0px;
+}
+.item_US_C_12 {border-right: 0}
+.item_US_C_12 .item_US_C_pic{
+    background-position: -2002px 0px;
+}
+
+.item_US_C_13 .item_US_C_pic{
+    background-position: 0px -182px;
+}
+.item_US_C_14 .item_US_C_pic{
+    background-position: -182px -182px;
+}
+.item_US_C_15 {border-right: 0}
+.item_US_C_15 .item_US_C_pic{
+    background-position: -364px -182px;
+}
+
+.item_US_C_16 .item_US_C_pic{
+    background-position: -546px -182px;
+}
+.item_US_C_17 .item_US_C_pic{
+    background-position: -728px -182px;
+}
+.item_US_C_18 {border-right: 0}
+.item_US_C_18 .item_US_C_pic{
+    background-position: -910px -182px;
+}
+
+.item_US_C_19 .item_US_C_pic{
+    background-position: -1092px -182px;
+}
+.item_US_C_20 .item_US_C_pic{
+    background-position: -1274px -182px;
+}
+.item_US_C_21 {border-right: 0}
+.item_US_C_21 .item_US_C_pic{
+    background-position: -1456px -182px;
+}
+
+.item_US_C_22 .item_US_C_pic{
+    background-position: -1638px -182px;
+}
+.item_US_C_23 .item_US_C_pic{
+    background-position: -1820px -182px;
+}
+.item_US_C_24 {border-right: 0}
+.item_US_C_24 .item_US_C_pic{
+    background-position: -2002px -182px;
+}
+
+.item_US_C_25 .item_US_C_pic{
+    background-position: 0px -364px;
+}
+.item_US_C_26 .item_US_C_pic{
+    background-position: -182px -364px;
+}
+.item_US_C_27 {border-right: 0}
+.item_US_C_27 .item_US_C_pic{
+    background-position: -364px -364px;
+}
+
+.item_US_C_28 .item_US_C_pic{
+    background-position: -546px -364px;
+}
+.item_US_C_29 .item_US_C_pic{
+    background-position: -728px -364px;
+}
+.item_US_C_30 {border-right: 0}
+.item_US_C_30 .item_US_C_pic{
+    background-position: -910px -364px;
+}
+
+.item_US_C_31 .item_US_C_pic{
+    background-position: -1092px -364px;
+}
+.item_US_C_32 .item_US_C_pic{
+    background-position: -1274px -364px;
+}
+.item_US_C_33 {border-right: 0}
+.item_US_C_33 .item_US_C_pic{
+    background-position: -1456px -364px;
+}
+
+.item_US_C_34 .item_US_C_pic{
+    background-position: -1638px -364px;
+}
+.item_US_C_35 .item_US_C_pic{
+    background-position: -1820px -364px;
+}
+.item_US_C_36 {border-right: 0}
+.item_US_C_36 .item_US_C_pic{
+    background-position: -2002px -364px;
+}
+
+.item_US_C_37 .item_US_C_pic{
+    background-position: 0px -546px;
+}
+.item_US_C_38 .item_US_C_pic{
+    background-position: -182px -546px;
+}
+.item_US_C_39 {border-right: 0}
+.item_US_C_39 .item_US_C_pic{
+    background-position: -364px -546px;
+}
+
+.item_US_C_40 .item_US_C_pic{
+    background-position: -546px -546px;
+}
+.item_US_C_41 .item_US_C_pic{
+    background-position: -728px -546px;
+}
+.item_US_C_42 {border-right: 0}
+.item_US_C_42 .item_US_C_pic{
+    background-position: -910px -546px;
+}
+
+.item_US_C_43 .item_US_C_pic{
+    background-position: -1092px -546px;
+}
+.item_US_C_44 .item_US_C_pic{
+    background-position: -1274px -546px;
+}
+.item_US_C_45 {border-right: 0}
+.item_US_C_45 .item_US_C_pic{
+    background-position: -1456px -546px;
+}
+
+.item_US_C_46 .item_US_C_pic{
+    background-position: -1638px -546px;
+}
+.item_US_C_47 .item_US_C_pic{
+    background-position: -1820px -546px;
+}
+.item_US_C_48 {border-right: 0}
+.item_US_C_48 .item_US_C_pic{
+    background-position: -2002px -546px;
+}
+
+.item_US_C_49 .item_US_C_pic{
+    background-position: 0px -728px;
+}
+.item_US_C_50 .item_US_C_pic{
+    background-position: -182px -728px;
+}
+.item_US_C_51 {border-right: 0}
+.item_US_C_51 .item_US_C_pic{
+    background-position: -364px -728px;
+}
+
+.item_US_C_52 .item_US_C_pic{
+    background-position: -546px -728px;
+}
+.item_US_C_53 .item_US_C_pic{
+    background-position: -728px -728px;
+}
+.item_US_C_54 {border-right: 0}
+.item_US_C_54 .item_US_C_pic{
+    background-position: -910px -728px;
+}
+
+.item_US_C_55 .item_US_C_pic{
+    background-position: -1092px -728px;
+}
+.item_US_C_56 .item_US_C_pic{
+    background-position: -1274px -728px;
+}
+.item_US_C_57 {border-right: 0}
+.item_US_C_57 .item_US_C_pic{
+    background-position: -1456px -728px;
+}
+
+.item_US_C_58 .item_US_C_pic{
+    background-position: -1638px -728px;
+}
+.item_US_C_59 .item_US_C_pic{
+    background-position: -1820px -728px;
+}
+.item_US_C_60 {border-right: 0}
+.item_US_C_60 .item_US_C_pic{
+    background-position: -2002px -728px;
+}
+
+.feat_main .item_US_NEW_pic {
+    display: block;
+    width: 182px;
+    height: 182px;
+    background: url("../images/thumbnails_teen_US_NEW.jpg")/*tpa=http://www.sanyi.org/images/thumbnails_teen_US_NEW.jpg*/ no-repeat;
+    margin: 0 92px;
+}
+
+.item_US_NEW_1 .item_US_NEW_pic{
+    background-position: 0px 0px;
+}
+.item_US_NEW_2 .item_US_NEW_pic{
+    background-position: -182px 0px;
+}
+.item_US_NEW_3 {border-right: 0}
+.item_US_NEW_3 .item_US_NEW_pic{
+    background-position: -364px 0px;
+}
+
+.item_US_NEW_4 .item_US_NEW_pic{
+    background-position: -546px 0px;
+}
+.item_US_NEW_5 .item_US_NEW_pic{
+    background-position: -728px 0px;
+}
+.item_US_NEW_6 {border-right: 0}
+.item_US_NEW_6 .item_US_NEW_pic{
+    background-position: -910px 0px;
+}
+
+.item_US_NEW_7 .item_US_NEW_pic{
+    background-position: -1092px 0px;
+}
+.item_US_NEW_8 .item_US_NEW_pic{
+    background-position: -1274px 0px;
+}
+.item_US_NEW_9 {border-right: 0}
+.item_US_NEW_9 .item_US_NEW_pic{
+    background-position: -1456px 0px;
+}
+
+.item_US_NEW_10 .item_US_NEW_pic{
+    background-position: -1638px 0px;
+}
+.item_US_NEW_11 .item_US_NEW_pic{
+    background-position: -1820px 0px;
+}
+.item_US_NEW_12 {border-right: 0}
+.item_US_NEW_12 .item_US_NEW_pic{
+    background-position: -2002px 0px;
+}
+
+.item_US_NEW_13 .item_US_NEW_pic{
+    background-position: 0px -182px;
+}
+.item_US_NEW_14 .item_US_NEW_pic{
+    background-position: -182px -182px;
+}
+.item_US_NEW_15 {border-right: 0}
+.item_US_NEW_15 .item_US_NEW_pic{
+    background-position: -364px -182px;
+}
+
+.item_US_NEW_16 .item_US_NEW_pic{
+    background-position: -546px -182px;
+}
+.item_US_NEW_17 .item_US_NEW_pic{
+    background-position: -728px -182px;
+}
+.item_US_NEW_18 {border-right: 0}
+.item_US_NEW_18 .item_US_NEW_pic{
+    background-position: -910px -182px;
+}
+
+.item_US_NEW_19 .item_US_NEW_pic{
+    background-position: -1092px -182px;
+}
+.item_US_NEW_20 .item_US_NEW_pic{
+    background-position: -1274px -182px;
+}
+.item_US_NEW_21 {border-right: 0}
+.item_US_NEW_21 .item_US_NEW_pic{
+    background-position: -1456px -182px;
+}
+
+.item_US_NEW_22 .item_US_NEW_pic{
+    background-position: -1638px -182px;
+}
+.item_US_NEW_23 .item_US_NEW_pic{
+    background-position: -1820px -182px;
+}
+.item_US_NEW_24 {border-right: 0}
+.item_US_NEW_24 .item_US_NEW_pic{
+    background-position: -2002px -182px;
+}
+
+.item_US_NEW_25 .item_US_NEW_pic{
+    background-position: 0px -364px;
+}
+.item_US_NEW_26 .item_US_NEW_pic{
+    background-position: -182px -364px;
+}
+.item_US_NEW_27 {border-right: 0}
+.item_US_NEW_27 .item_US_NEW_pic{
+    background-position: -364px -364px;
+}
+
+.item_US_NEW_28 .item_US_NEW_pic{
+    background-position: -546px -364px;
+}
+.item_US_NEW_29 .item_US_NEW_pic{
+    background-position: -728px -364px;
+}
+.item_US_NEW_30 {border-right: 0}
+.item_US_NEW_30 .item_US_NEW_pic{
+    background-position: -910px -364px;
+}
+
+.item_US_NEW_31 .item_US_NEW_pic{
+    background-position: -1092px -364px;
+}
+.item_US_NEW_32 .item_US_NEW_pic{
+    background-position: -1274px -364px;
+}
+.item_US_NEW_33 {border-right: 0}
+.item_US_NEW_33 .item_US_NEW_pic{
+    background-position: -1456px -364px;
+}
+
+.item_US_NEW_34 .item_US_NEW_pic{
+    background-position: -1638px -364px;
+}
+.item_US_NEW_35 .item_US_NEW_pic{
+    background-position: -1820px -364px;
+}
+.item_US_NEW_36 {border-right: 0}
+.item_US_NEW_36 .item_US_NEW_pic{
+    background-position: -2002px -364px;
+}
+
+.item_US_NEW_37 .item_US_NEW_pic{
+    background-position: 0px -546px;
+}
+.item_US_NEW_38 .item_US_NEW_pic{
+    background-position: -182px -546px;
+}
+.item_US_NEW_39 {border-right: 0}
+.item_US_NEW_39 .item_US_NEW_pic{
+    background-position: -364px -546px;
+}
+
+.item_US_NEW_40 .item_US_NEW_pic{
+    background-position: -546px -546px;
+}
+.item_US_NEW_41 .item_US_NEW_pic{
+    background-position: -728px -546px;
+}
+.item_US_NEW_42 {border-right: 0}
+.item_US_NEW_42 .item_US_NEW_pic{
+    background-position: -910px -546px;
+}
+
+.item_US_NEW_43 .item_US_NEW_pic{
+    background-position: -1092px -546px;
+}
+.item_US_NEW_44 .item_US_NEW_pic{
+    background-position: -1274px -546px;
+}
+.item_US_NEW_45 {border-right: 0}
+.item_US_NEW_45 .item_US_NEW_pic{
+    background-position: -1456px -546px;
+}
+
+.item_US_NEW_46 .item_US_NEW_pic{
+    background-position: -1638px -546px;
+}
+.item_US_NEW_47 .item_US_NEW_pic{
+    background-position: -1820px -546px;
+}
+.item_US_NEW_48 {border-right: 0}
+.item_US_NEW_48 .item_US_NEW_pic{
+    background-position: -2002px -546px;
+}
+
+.item_US_NEW_49 .item_US_NEW_pic{
+    background-position: 0px -728px;
+}
+.item_US_NEW_50 .item_US_NEW_pic{
+    background-position: -182px -728px;
+}
+.item_US_NEW_51 {border-right: 0}
+.item_US_NEW_51 .item_US_NEW_pic{
+    background-position: -364px -728px;
+}
+
+.item_US_NEW_52 .item_US_NEW_pic{
+    background-position: -546px -728px;
+}
+.item_US_NEW_53 .item_US_NEW_pic{
+    background-position: -728px -728px;
+}
+.item_US_NEW_54 {border-right: 0}
+.item_US_NEW_54 .item_US_NEW_pic{
+    background-position: -910px -728px;
+}
+
+.item_US_NEW_55 .item_US_NEW_pic{
+    background-position: -1092px -728px;
+}
+.item_US_NEW_56 .item_US_NEW_pic{
+    background-position: -1274px -728px;
+}
+.item_US_NEW_57 {border-right: 0}
+.item_US_NEW_57 .item_US_NEW_pic{
+    background-position: -1456px -728px;
+}
+
+.item_US_NEW_58 .item_US_NEW_pic{
+    background-position: -1638px -728px;
+}
+.item_US_NEW_59 .item_US_NEW_pic{
+    background-position: -1820px -728px;
+}
+.item_US_NEW_60 {border-right: 0}
+.item_US_NEW_60 .item_US_NEW_pic{
+    background-position: -2002px -728px;
+}
+
+
+/* 青少年夏季美国游学 Ends */
+
+/* 青少年夏季英国游学 Starts */
+
+.feat_main .item_UK_A_pic {
+    display: block;
+    width: 182px;
+    height: 182px;
+    background: url("../images/thumbnails_teen_UK_A.jpg")/*tpa=http://www.sanyi.org/images/thumbnails_teen_UK_A.jpg*/ no-repeat;
+    margin: 0 92px;
+}
+
+.item_UK_A_1 .item_UK_A_pic{
+    background-position: 0px 0px;
+}
+.item_UK_A_2 .item_UK_A_pic{
+    background-position: -182px 0px;
+}
+.item_UK_A_3 {border-right: 0}
+.item_UK_A_3 .item_UK_A_pic{
+    background-position: -364px 0px;
+}
+
+.item_UK_A_4 .item_UK_A_pic{
+    background-position: -546px 0px;
+}
+.item_UK_A_5 .item_UK_A_pic{
+    background-position: -728px 0px;
+}
+.item_UK_A_6 {border-right: 0}
+.item_UK_A_6 .item_UK_A_pic{
+    background-position: -910px 0px;
+}
+
+.item_UK_A_7 .item_UK_A_pic{
+    background-position: -1092px 0px;
+}
+.item_UK_A_8 .item_UK_A_pic{
+    background-position: -1274px 0px;
+}
+.item_UK_A_9 {border-right: 0}
+.item_UK_A_9 .item_UK_A_pic{
+    background-position: -1456px 0px;
+}
+
+.item_UK_A_10 .item_UK_A_pic{
+    background-position: -1638px 0px;
+}
+.item_UK_A_11 .item_UK_A_pic{
+    background-position: -1820px 0px;
+}
+.item_UK_A_12 {border-right: 0}
+.item_UK_A_12 .item_UK_A_pic{
+    background-position: -2002px 0px;
+}
+
+.item_UK_A_13 .item_UK_A_pic{
+    background-position: 0px -182px;
+}
+.item_UK_A_14 .item_UK_A_pic{
+    background-position: -182px -182px;
+}
+.item_UK_A_15 {border-right: 0}
+.item_UK_A_15 .item_UK_A_pic{
+    background-position: -364px -182px;
+}
+
+.item_UK_A_16 .item_UK_A_pic{
+    background-position: -546px -182px;
+}
+.item_UK_A_17 .item_UK_A_pic{
+    background-position: -728px -182px;
+}
+.item_UK_A_18 {border-right: 0}
+.item_UK_A_18 .item_UK_A_pic{
+    background-position: -910px -182px;
+}
+
+.item_UK_A_19 .item_UK_A_pic{
+    background-position: -1092px -182px;
+}
+.item_UK_A_20 .item_UK_A_pic{
+    background-position: -1274px -182px;
+}
+.item_UK_A_21 {border-right: 0}
+.item_UK_A_21 .item_UK_A_pic{
+    background-position: -1456px -182px;
+}
+
+.item_UK_A_22 .item_UK_A_pic{
+    background-position: -1638px -182px;
+}
+.item_UK_A_23 .item_UK_A_pic{
+    background-position: -1820px -182px;
+}
+.item_UK_A_24 {border-right: 0}
+.item_UK_A_24 .item_UK_A_pic{
+    background-position: -2002px -182px;
+}
+
+.item_UK_A_25 .item_UK_A_pic{
+    background-position: 0px -364px;
+}
+.item_UK_A_26 .item_UK_A_pic{
+    background-position: -182px -364px;
+}
+.item_UK_A_27 {border-right: 0}
+.item_UK_A_27 .item_UK_A_pic{
+    background-position: -364px -364px;
+}
+
+.item_UK_A_28 .item_UK_A_pic{
+    background-position: -546px -364px;
+}
+.item_UK_A_29 .item_UK_A_pic{
+    background-position: -728px -364px;
+}
+.item_UK_A_30 {border-right: 0}
+.item_UK_A_30 .item_UK_A_pic{
+    background-position: -910px -364px;
+}
+
+.item_UK_A_31 .item_UK_A_pic{
+    background-position: -1092px -364px;
+}
+.item_UK_A_32 .item_UK_A_pic{
+    background-position: -1274px -364px;
+}
+.item_UK_A_33 {border-right: 0}
+.item_UK_A_33 .item_UK_A_pic{
+    background-position: -1456px -364px;
+}
+
+.item_UK_A_34 .item_UK_A_pic{
+    background-position: -1638px -364px;
+}
+.item_UK_A_35 .item_UK_A_pic{
+    background-position: -1820px -364px;
+}
+.item_UK_A_36 {border-right: 0}
+.item_UK_A_36 .item_UK_A_pic{
+    background-position: -2002px -364px;
+}
+
+.item_UK_A_37 .item_UK_A_pic{
+    background-position: 0px -546px;
+}
+.item_UK_A_38 .item_UK_A_pic{
+    background-position: -182px -546px;
+}
+.item_UK_A_39 {border-right: 0}
+.item_UK_A_39 .item_UK_A_pic{
+    background-position: -364px -546px;
+}
+
+.item_UK_A_40 .item_UK_A_pic{
+    background-position: -546px -546px;
+}
+.item_UK_A_41 .item_UK_A_pic{
+    background-position: -728px -546px;
+}
+.item_UK_A_42 {border-right: 0}
+.item_UK_A_42 .item_UK_A_pic{
+    background-position: -910px -546px;
+}
+
+.item_UK_A_43 .item_UK_A_pic{
+    background-position: -1092px -546px;
+}
+.item_UK_A_44 .item_UK_A_pic{
+    background-position: -1274px -546px;
+}
+.item_UK_A_45 {border-right: 0}
+.item_UK_A_45 .item_UK_A_pic{
+    background-position: -1456px -546px;
+}
+
+.item_UK_A_46 .item_UK_A_pic{
+    background-position: -1638px -546px;
+}
+.item_UK_A_47 .item_UK_A_pic{
+    background-position: -1820px -546px;
+}
+.item_UK_A_48 {border-right: 0}
+.item_UK_A_48 .item_UK_A_pic{
+    background-position: -2002px -546px;
+}
+
+.item_UK_A_49 .item_UK_A_pic{
+    background-position: 0px -728px;
+}
+.item_UK_A_50 .item_UK_A_pic{
+    background-position: -182px -728px;
+}
+.item_UK_A_51 {border-right: 0}
+.item_UK_A_51 .item_UK_A_pic{
+    background-position: -364px -728px;
+}
+
+.item_UK_A_52 .item_UK_A_pic{
+    background-position: -546px -728px;
+}
+.item_UK_A_53 .item_UK_A_pic{
+    background-position: -728px -728px;
+}
+.item_UK_A_54 {border-right: 0}
+.item_UK_A_54 .item_UK_A_pic{
+    background-position: -910px -728px;
+}
+
+.item_UK_A_55 .item_UK_A_pic{
+    background-position: -1092px -728px;
+}
+.item_UK_A_56 .item_UK_A_pic{
+    background-position: -1274px -728px;
+}
+.item_UK_A_57 {border-right: 0}
+.item_UK_A_57 .item_UK_A_pic{
+    background-position: -1456px -728px;
+}
+
+.item_UK_A_58 .item_UK_A_pic{
+    background-position: -1638px -728px;
+}
+.item_UK_A_59 .item_UK_A_pic{
+    background-position: -1820px -728px;
+}
+.item_UK_A_60 {border-right: 0}
+.item_UK_A_60 .item_UK_A_pic{
+    background-position: -2002px -728px;
+}
+
+
+
+.feat_main .item_UK_B_pic {
+    display: block;
+    width: 182px;
+    height: 182px;
+    background: url("../images/thumbnails_teen_UK_B.jpg")/*tpa=http://www.sanyi.org/images/thumbnails_teen_UK_B.jpg*/ no-repeat;
+    margin: 0 92px;
+}
+
+.item_UK_B_1 .item_UK_B_pic{
+    background-position: 0px 0px;
+}
+.item_UK_B_2 .item_UK_B_pic{
+    background-position: -182px 0px;
+}
+.item_UK_B_3 {border-right: 0}
+.item_UK_B_3 .item_UK_B_pic{
+    background-position: -364px 0px;
+}
+
+.item_UK_B_4 .item_UK_B_pic{
+    background-position: -546px 0px;
+}
+.item_UK_B_5 .item_UK_B_pic{
+    background-position: -728px 0px;
+}
+.item_UK_B_6 {border-right: 0}
+.item_UK_B_6 .item_UK_B_pic{
+    background-position: -910px 0px;
+}
+
+.item_UK_B_7 .item_UK_B_pic{
+    background-position: -1092px 0px;
+}
+.item_UK_B_8 .item_UK_B_pic{
+    background-position: -1274px 0px;
+}
+.item_UK_B_9 {border-right: 0}
+.item_UK_B_9 .item_UK_B_pic{
+    background-position: -1456px 0px;
+}
+
+.item_UK_B_10 .item_UK_B_pic{
+    background-position: -1638px 0px;
+}
+.item_UK_B_11 .item_UK_B_pic{
+    background-position: -1820px 0px;
+}
+.item_UK_B_12 {border-right: 0}
+.item_UK_B_12 .item_UK_B_pic{
+    background-position: -2002px 0px;
+}
+
+.item_UK_B_13 .item_UK_B_pic{
+    background-position: 0px -182px;
+}
+.item_UK_B_14 .item_UK_B_pic{
+    background-position: -182px -182px;
+}
+.item_UK_B_15 {border-right: 0}
+.item_UK_B_15 .item_UK_B_pic{
+    background-position: -364px -182px;
+}
+
+.item_UK_B_16 .item_UK_B_pic{
+    background-position: -546px -182px;
+}
+.item_UK_B_17 .item_UK_B_pic{
+    background-position: -728px -182px;
+}
+.item_UK_B_18 {border-right: 0}
+.item_UK_B_18 .item_UK_B_pic{
+    background-position: -910px -182px;
+}
+
+.item_UK_B_19 .item_UK_B_pic{
+    background-position: -1092px -182px;
+}
+.item_UK_B_20 .item_UK_B_pic{
+    background-position: -1274px -182px;
+}
+.item_UK_B_21 {border-right: 0}
+.item_UK_B_21 .item_UK_B_pic{
+    background-position: -1456px -182px;
+}
+
+.item_UK_B_22 .item_UK_B_pic{
+    background-position: -1638px -182px;
+}
+.item_UK_B_23 .item_UK_B_pic{
+    background-position: -1820px -182px;
+}
+.item_UK_B_24 {border-right: 0}
+.item_UK_B_24 .item_UK_B_pic{
+    background-position: -2002px -182px;
+}
+
+.item_UK_B_25 .item_UK_B_pic{
+    background-position: 0px -364px;
+}
+.item_UK_B_26 .item_UK_B_pic{
+    background-position: -182px -364px;
+}
+.item_UK_B_27 {border-right: 0}
+.item_UK_B_27 .item_UK_B_pic{
+    background-position: -364px -364px;
+}
+
+.item_UK_B_28 .item_UK_B_pic{
+    background-position: -546px -364px;
+}
+.item_UK_B_29 .item_UK_B_pic{
+    background-position: -728px -364px;
+}
+.item_UK_B_30 {border-right: 0}
+.item_UK_B_30 .item_UK_B_pic{
+    background-position: -910px -364px;
+}
+
+.item_UK_B_31 .item_UK_B_pic{
+    background-position: -1092px -364px;
+}
+.item_UK_B_32 .item_UK_B_pic{
+    background-position: -1274px -364px;
+}
+.item_UK_B_33 {border-right: 0}
+.item_UK_B_33 .item_UK_B_pic{
+    background-position: -1456px -364px;
+}
+
+.item_UK_B_34 .item_UK_B_pic{
+    background-position: -1638px -364px;
+}
+.item_UK_B_35 .item_UK_B_pic{
+    background-position: -1820px -364px;
+}
+.item_UK_B_36 {border-right: 0}
+.item_UK_B_36 .item_UK_B_pic{
+    background-position: -2002px -364px;
+}
+
+.item_UK_B_37 .item_UK_B_pic{
+    background-position: 0px -546px;
+}
+.item_UK_B_38 .item_UK_B_pic{
+    background-position: -182px -546px;
+}
+.item_UK_B_39 {border-right: 0}
+.item_UK_B_39 .item_UK_B_pic{
+    background-position: -364px -546px;
+}
+
+.item_UK_B_40 .item_UK_B_pic{
+    background-position: -546px -546px;
+}
+.item_UK_B_41 .item_UK_B_pic{
+    background-position: -728px -546px;
+}
+.item_UK_B_42 {border-right: 0}
+.item_UK_B_42 .item_UK_B_pic{
+    background-position: -910px -546px;
+}
+
+.item_UK_B_43 .item_UK_B_pic{
+    background-position: -1092px -546px;
+}
+.item_UK_B_44 .item_UK_B_pic{
+    background-position: -1274px -546px;
+}
+.item_UK_B_45 {border-right: 0}
+.item_UK_B_45 .item_UK_B_pic{
+    background-position: -1456px -546px;
+}
+
+.item_UK_B_46 .item_UK_B_pic{
+    background-position: -1638px -546px;
+}
+.item_UK_B_47 .item_UK_B_pic{
+    background-position: -1820px -546px;
+}
+.item_UK_B_48 {border-right: 0}
+.item_UK_B_48 .item_UK_B_pic{
+    background-position: -2002px -546px;
+}
+
+.item_UK_B_49 .item_UK_B_pic{
+    background-position: 0px -728px;
+}
+.item_UK_B_50 .item_UK_B_pic{
+    background-position: -182px -728px;
+}
+.item_UK_B_51 {border-right: 0}
+.item_UK_B_51 .item_UK_B_pic{
+    background-position: -364px -728px;
+}
+
+.item_UK_B_52 .item_UK_B_pic{
+    background-position: -546px -728px;
+}
+.item_UK_B_53 .item_UK_B_pic{
+    background-position: -728px -728px;
+}
+.item_UK_B_54 {border-right: 0}
+.item_UK_B_54 .item_UK_B_pic{
+    background-position: -910px -728px;
+}
+
+.item_UK_B_55 .item_UK_B_pic{
+    background-position: -1092px -728px;
+}
+.item_UK_B_56 .item_UK_B_pic{
+    background-position: -1274px -728px;
+}
+.item_UK_B_57 {border-right: 0}
+.item_UK_B_57 .item_UK_B_pic{
+    background-position: -1456px -728px;
+}
+
+.item_UK_B_58 .item_UK_B_pic{
+    background-position: -1638px -728px;
+}
+.item_UK_B_59 .item_UK_B_pic{
+    background-position: -1820px -728px;
+}
+.item_UK_B_60 {border-right: 0}
+.item_UK_B_60 .item_UK_B_pic{
+    background-position: -2002px -728px;
+}
+
+
+.feat_main .item_UK_C_pic {
+    display: block;
+    width: 182px;
+    height: 182px;
+    background: url("../images/thumbnails_teen_UK_C.jpg")/*tpa=http://www.sanyi.org/images/thumbnails_teen_UK_C.jpg*/ no-repeat;
+    margin: 0 92px;
+}
+
+.item_UK_C_1 .item_UK_C_pic{
+    background-position: 0px 0px;
+}
+.item_UK_C_2 .item_UK_C_pic{
+    background-position: -182px 0px;
+}
+.item_UK_C_3 {border-right: 0}
+.item_UK_C_3 .item_UK_C_pic{
+    background-position: -364px 0px;
+}
+
+.item_UK_C_4 .item_UK_C_pic{
+    background-position: -546px 0px;
+}
+.item_UK_C_5 .item_UK_C_pic{
+    background-position: -728px 0px;
+}
+.item_UK_C_6 {border-right: 0}
+.item_UK_C_6 .item_UK_C_pic{
+    background-position: -910px 0px;
+}
+
+.item_UK_C_7 .item_UK_C_pic{
+    background-position: -1092px 0px;
+}
+.item_UK_C_8 .item_UK_C_pic{
+    background-position: -1274px 0px;
+}
+.item_UK_C_9 {border-right: 0}
+.item_UK_C_9 .item_UK_C_pic{
+    background-position: -1456px 0px;
+}
+
+.item_UK_C_10 .item_UK_C_pic{
+    background-position: -1638px 0px;
+}
+.item_UK_C_11 .item_UK_C_pic{
+    background-position: -1820px 0px;
+}
+.item_UK_C_12 {border-right: 0}
+.item_UK_C_12 .item_UK_C_pic{
+    background-position: -2002px 0px;
+}
+
+.item_UK_C_13 .item_UK_C_pic{
+    background-position: 0px -182px;
+}
+.item_UK_C_14 .item_UK_C_pic{
+    background-position: -182px -182px;
+}
+.item_UK_C_15 {border-right: 0}
+.item_UK_C_15 .item_UK_C_pic{
+    background-position: -364px -182px;
+}
+
+.item_UK_C_16 .item_UK_C_pic{
+    background-position: -546px -182px;
+}
+.item_UK_C_17 .item_UK_C_pic{
+    background-position: -728px -182px;
+}
+.item_UK_C_18 {border-right: 0}
+.item_UK_C_18 .item_UK_C_pic{
+    background-position: -910px -182px;
+}
+
+.item_UK_C_19 .item_UK_C_pic{
+    background-position: -1092px -182px;
+}
+.item_UK_C_20 .item_UK_C_pic{
+    background-position: -1274px -182px;
+}
+.item_UK_C_21 {border-right: 0}
+.item_UK_C_21 .item_UK_C_pic{
+    background-position: -1456px -182px;
+}
+
+.item_UK_C_22 .item_UK_C_pic{
+    background-position: -1638px -182px;
+}
+.item_UK_C_23 .item_UK_C_pic{
+    background-position: -1820px -182px;
+}
+.item_UK_C_24 {border-right: 0}
+.item_UK_C_24 .item_UK_C_pic{
+    background-position: -2002px -182px;
+}
+
+.item_UK_C_25 .item_UK_C_pic{
+    background-position: 0px -364px;
+}
+.item_UK_C_26 .item_UK_C_pic{
+    background-position: -182px -364px;
+}
+.item_UK_C_27 {border-right: 0}
+.item_UK_C_27 .item_UK_C_pic{
+    background-position: -364px -364px;
+}
+
+.item_UK_C_28 .item_UK_C_pic{
+    background-position: -546px -364px;
+}
+.item_UK_C_29 .item_UK_C_pic{
+    background-position: -728px -364px;
+}
+.item_UK_C_30 {border-right: 0}
+.item_UK_C_30 .item_UK_C_pic{
+    background-position: -910px -364px;
+}
+
+.item_UK_C_31 .item_UK_C_pic{
+    background-position: -1092px -364px;
+}
+.item_UK_C_32 .item_UK_C_pic{
+    background-position: -1274px -364px;
+}
+.item_UK_C_33 {border-right: 0}
+.item_UK_C_33 .item_UK_C_pic{
+    background-position: -1456px -364px;
+}
+
+.item_UK_C_34 .item_UK_C_pic{
+    background-position: -1638px -364px;
+}
+.item_UK_C_35 .item_UK_C_pic{
+    background-position: -1820px -364px;
+}
+.item_UK_C_36 {border-right: 0}
+.item_UK_C_36 .item_UK_C_pic{
+    background-position: -2002px -364px;
+}
+
+.item_UK_C_37 .item_UK_C_pic{
+    background-position: 0px -546px;
+}
+.item_UK_C_38 .item_UK_C_pic{
+    background-position: -182px -546px;
+}
+.item_UK_C_39 {border-right: 0}
+.item_UK_C_39 .item_UK_C_pic{
+    background-position: -364px -546px;
+}
+
+.item_UK_C_40 .item_UK_C_pic{
+    background-position: -546px -546px;
+}
+.item_UK_C_41 .item_UK_C_pic{
+    background-position: -728px -546px;
+}
+.item_UK_C_42 {border-right: 0}
+.item_UK_C_42 .item_UK_C_pic{
+    background-position: -910px -546px;
+}
+
+.item_UK_C_43 .item_UK_C_pic{
+    background-position: -1092px -546px;
+}
+.item_UK_C_44 .item_UK_C_pic{
+    background-position: -1274px -546px;
+}
+.item_UK_C_45 {border-right: 0}
+.item_UK_C_45 .item_UK_C_pic{
+    background-position: -1456px -546px;
+}
+
+.item_UK_C_46 .item_UK_C_pic{
+    background-position: -1638px -546px;
+}
+.item_UK_C_47 .item_UK_C_pic{
+    background-position: -1820px -546px;
+}
+.item_UK_C_48 {border-right: 0}
+.item_UK_C_48 .item_UK_C_pic{
+    background-position: -2002px -546px;
+}
+
+.item_UK_C_49 .item_UK_C_pic{
+    background-position: 0px -728px;
+}
+.item_UK_C_50 .item_UK_C_pic{
+    background-position: -182px -728px;
+}
+.item_UK_C_51 {border-right: 0}
+.item_UK_C_51 .item_UK_C_pic{
+    background-position: -364px -728px;
+}
+
+.item_UK_C_52 .item_UK_C_pic{
+    background-position: -546px -728px;
+}
+.item_UK_C_53 .item_UK_C_pic{
+    background-position: -728px -728px;
+}
+.item_UK_C_54 {border-right: 0}
+.item_UK_C_54 .item_UK_C_pic{
+    background-position: -910px -728px;
+}
+
+.item_UK_C_55 .item_UK_C_pic{
+    background-position: -1092px -728px;
+}
+.item_UK_C_56 .item_UK_C_pic{
+    background-position: -1274px -728px;
+}
+.item_UK_C_57 {border-right: 0}
+.item_UK_C_57 .item_UK_C_pic{
+    background-position: -1456px -728px;
+}
+
+.item_UK_C_58 .item_UK_C_pic{
+    background-position: -1638px -728px;
+}
+.item_UK_C_59 .item_UK_C_pic{
+    background-position: -1820px -728px;
+}
+.item_UK_C_60 {border-right: 0}
+.item_UK_C_60 .item_UK_C_pic{
+    background-position: -2002px -728px;
+}
+
+.feat_main .item_UK_NEW_pic {
+    display: block;
+    width: 182px;
+    height: 182px;
+    background: url("../images/thumbnails_teen_UK_NEW.jpg")/*tpa=http://www.sanyi.org/images/thumbnails_teen_UK_NEW.jpg*/ no-repeat;
+    margin: 0 92px;
+}
+
+.item_UK_NEW_1 .item_UK_NEW_pic{
+    background-position: 0px 0px;
+}
+.item_UK_NEW_2 .item_UK_NEW_pic{
+    background-position: -182px 0px;
+}
+.item_UK_NEW_3 {border-right: 0}
+.item_UK_NEW_3 .item_UK_NEW_pic{
+    background-position: -364px 0px;
+}
+
+.item_UK_NEW_4 .item_UK_NEW_pic{
+    background-position: -546px 0px;
+}
+.item_UK_NEW_5 .item_UK_NEW_pic{
+    background-position: -728px 0px;
+}
+.item_UK_NEW_6 {border-right: 0}
+.item_UK_NEW_6 .item_UK_NEW_pic{
+    background-position: -910px 0px;
+}
+
+.item_UK_NEW_7 .item_UK_NEW_pic{
+    background-position: -1092px 0px;
+}
+.item_UK_NEW_8 .item_UK_NEW_pic{
+    background-position: -1274px 0px;
+}
+.item_UK_NEW_9 {border-right: 0}
+.item_UK_NEW_9 .item_UK_NEW_pic{
+    background-position: -1456px 0px;
+}
+
+.item_UK_NEW_10 .item_UK_NEW_pic{
+    background-position: -1638px 0px;
+}
+.item_UK_NEW_11 .item_UK_NEW_pic{
+    background-position: -1820px 0px;
+}
+.item_UK_NEW_12 {border-right: 0}
+.item_UK_NEW_12 .item_UK_NEW_pic{
+    background-position: -2002px 0px;
+}
+
+.item_UK_NEW_13 .item_UK_NEW_pic{
+    background-position: 0px -182px;
+}
+.item_UK_NEW_14 .item_UK_NEW_pic{
+    background-position: -182px -182px;
+}
+.item_UK_NEW_15 {border-right: 0}
+.item_UK_NEW_15 .item_UK_NEW_pic{
+    background-position: -364px -182px;
+}
+
+.item_UK_NEW_16 .item_UK_NEW_pic{
+    background-position: -546px -182px;
+}
+.item_UK_NEW_17 .item_UK_NEW_pic{
+    background-position: -728px -182px;
+}
+.item_UK_NEW_18 {border-right: 0}
+.item_UK_NEW_18 .item_UK_NEW_pic{
+    background-position: -910px -182px;
+}
+
+.item_UK_NEW_19 .item_UK_NEW_pic{
+    background-position: -1092px -182px;
+}
+.item_UK_NEW_20 .item_UK_NEW_pic{
+    background-position: -1274px -182px;
+}
+.item_UK_NEW_21 {border-right: 0}
+.item_UK_NEW_21 .item_UK_NEW_pic{
+    background-position: -1456px -182px;
+}
+
+.item_UK_NEW_22 .item_UK_NEW_pic{
+    background-position: -1638px -182px;
+}
+.item_UK_NEW_23 .item_UK_NEW_pic{
+    background-position: -1820px -182px;
+}
+.item_UK_NEW_24 {border-right: 0}
+.item_UK_NEW_24 .item_UK_NEW_pic{
+    background-position: -2002px -182px;
+}
+
+.item_UK_NEW_25 .item_UK_NEW_pic{
+    background-position: 0px -364px;
+}
+.item_UK_NEW_26 .item_UK_NEW_pic{
+    background-position: -182px -364px;
+}
+.item_UK_NEW_27 {border-right: 0}
+.item_UK_NEW_27 .item_UK_NEW_pic{
+    background-position: -364px -364px;
+}
+
+.item_UK_NEW_28 .item_UK_NEW_pic{
+    background-position: -546px -364px;
+}
+.item_UK_NEW_29 .item_UK_NEW_pic{
+    background-position: -728px -364px;
+}
+.item_UK_NEW_30 {border-right: 0}
+.item_UK_NEW_30 .item_UK_NEW_pic{
+    background-position: -910px -364px;
+}
+
+.item_UK_NEW_31 .item_UK_NEW_pic{
+    background-position: -1092px -364px;
+}
+.item_UK_NEW_32 .item_UK_NEW_pic{
+    background-position: -1274px -364px;
+}
+.item_UK_NEW_33 {border-right: 0}
+.item_UK_NEW_33 .item_UK_NEW_pic{
+    background-position: -1456px -364px;
+}
+
+.item_UK_NEW_34 .item_UK_NEW_pic{
+    background-position: -1638px -364px;
+}
+.item_UK_NEW_35 .item_UK_NEW_pic{
+    background-position: -1820px -364px;
+}
+.item_UK_NEW_36 {border-right: 0}
+.item_UK_NEW_36 .item_UK_NEW_pic{
+    background-position: -2002px -364px;
+}
+
+.item_UK_NEW_37 .item_UK_NEW_pic{
+    background-position: 0px -546px;
+}
+.item_UK_NEW_38 .item_UK_NEW_pic{
+    background-position: -182px -546px;
+}
+.item_UK_NEW_39 {border-right: 0}
+.item_UK_NEW_39 .item_UK_NEW_pic{
+    background-position: -364px -546px;
+}
+
+.item_UK_NEW_40 .item_UK_NEW_pic{
+    background-position: -546px -546px;
+}
+.item_UK_NEW_41 .item_UK_NEW_pic{
+    background-position: -728px -546px;
+}
+.item_UK_NEW_42 {border-right: 0}
+.item_UK_NEW_42 .item_UK_NEW_pic{
+    background-position: -910px -546px;
+}
+
+.item_UK_NEW_43 .item_UK_NEW_pic{
+    background-position: -1092px -546px;
+}
+.item_UK_NEW_44 .item_UK_NEW_pic{
+    background-position: -1274px -546px;
+}
+.item_UK_NEW_45 {border-right: 0}
+.item_UK_NEW_45 .item_UK_NEW_pic{
+    background-position: -1456px -546px;
+}
+
+.item_UK_NEW_46 .item_UK_NEW_pic{
+    background-position: -1638px -546px;
+}
+.item_UK_NEW_47 .item_UK_NEW_pic{
+    background-position: -1820px -546px;
+}
+.item_UK_NEW_48 {border-right: 0}
+.item_UK_NEW_48 .item_UK_NEW_pic{
+    background-position: -2002px -546px;
+}
+
+.item_UK_NEW_49 .item_UK_NEW_pic{
+    background-position: 0px -728px;
+}
+.item_UK_NEW_50 .item_UK_NEW_pic{
+    background-position: -182px -728px;
+}
+.item_UK_NEW_51 {border-right: 0}
+.item_UK_NEW_51 .item_UK_NEW_pic{
+    background-position: -364px -728px;
+}
+
+.item_UK_NEW_52 .item_UK_NEW_pic{
+    background-position: -546px -728px;
+}
+.item_UK_NEW_53 .item_UK_NEW_pic{
+    background-position: -728px -728px;
+}
+.item_UK_NEW_54 {border-right: 0}
+.item_UK_NEW_54 .item_UK_NEW_pic{
+    background-position: -910px -728px;
+}
+
+.item_UK_NEW_55 .item_UK_NEW_pic{
+    background-position: -1092px -728px;
+}
+.item_UK_NEW_56 .item_UK_NEW_pic{
+    background-position: -1274px -728px;
+}
+.item_UK_NEW_57 {border-right: 0}
+.item_UK_NEW_57 .item_UK_NEW_pic{
+    background-position: -1456px -728px;
+}
+
+.item_UK_NEW_58 .item_UK_NEW_pic{
+    background-position: -1638px -728px;
+}
+.item_UK_NEW_59 .item_UK_NEW_pic{
+    background-position: -1820px -728px;
+}
+.item_UK_NEW_60 {border-right: 0}
+.item_UK_NEW_60 .item_UK_NEW_pic{
+    background-position: -2002px -728px;
+}
+
+/* 青少年夏季英国游学 Ends */
+
+/* 青少年夏季加拿大游学 Starts */
+
+/* 加拿大学术类游学夏令营夏校项目 */
+
+.feat_main .item_CAN_A_pic {
+    display: block;
+    width: 182px;
+    height: 182px;
+    background: url("../images/thumbnails_teen_CAN_A.jpg")/*tpa=http://www.sanyi.org/images/thumbnails_teen_CAN_A.jpg*/ no-repeat;
+    margin: 0 92px;
+}
+
+.item_CAN_A_1 .item_CAN_A_pic{
+    background-position: 0px 0px;
+}
+.item_CAN_A_2 .item_CAN_A_pic{
+    background-position: -182px 0px;
+}
+.item_CAN_A_3 {border-right: 0}
+.item_CAN_A_3 .item_CAN_A_pic{
+    background-position: -364px 0px;
+}
+
+.item_CAN_A_4 .item_CAN_A_pic{
+    background-position: -546px 0px;
+}
+.item_CAN_A_5 .item_CAN_A_pic{
+    background-position: -728px 0px;
+}
+.item_CAN_A_6 {border-right: 0}
+.item_CAN_A_6 .item_CAN_A_pic{
+    background-position: -910px 0px;
+}
+
+.item_CAN_A_7 .item_CAN_A_pic{
+    background-position: -1092px 0px;
+}
+.item_CAN_A_8 .item_CAN_A_pic{
+    background-position: -1274px 0px;
+}
+.item_CAN_A_9 {border-right: 0}
+.item_CAN_A_9 .item_CAN_A_pic{
+    background-position: -1456px 0px;
+}
+
+.item_CAN_A_10 .item_CAN_A_pic{
+    background-position: -1638px 0px;
+}
+.item_CAN_A_11 .item_CAN_A_pic{
+    background-position: -1820px 0px;
+}
+.item_CAN_A_12 {border-right: 0}
+.item_CAN_A_12 .item_CAN_A_pic{
+    background-position: -2002px 0px;
+}
+
+.item_CAN_A_13 .item_CAN_A_pic{
+    background-position: 0px -182px;
+}
+.item_CAN_A_14 .item_CAN_A_pic{
+    background-position: -182px -182px;
+}
+.item_CAN_A_15 {border-right: 0}
+.item_CAN_A_15 .item_CAN_A_pic{
+    background-position: -364px -182px;
+}
+
+.item_CAN_A_16 .item_CAN_A_pic{
+    background-position: -546px -182px;
+}
+.item_CAN_A_17 .item_CAN_A_pic{
+    background-position: -728px -182px;
+}
+.item_CAN_A_18 {border-right: 0}
+.item_CAN_A_18 .item_CAN_A_pic{
+    background-position: -910px -182px;
+}
+
+.item_CAN_A_19 .item_CAN_A_pic{
+    background-position: -1092px -182px;
+}
+.item_CAN_A_20 .item_CAN_A_pic{
+    background-position: -1274px -182px;
+}
+.item_CAN_A_21 {border-right: 0}
+.item_CAN_A_21 .item_CAN_A_pic{
+    background-position: -1456px -182px;
+}
+
+.item_CAN_A_22 .item_CAN_A_pic{
+    background-position: -1638px -182px;
+}
+.item_CAN_A_23 .item_CAN_A_pic{
+    background-position: -1820px -182px;
+}
+.item_CAN_A_24 {border-right: 0}
+.item_CAN_A_24 .item_CAN_A_pic{
+    background-position: -2002px -182px;
+}
+
+/* 加拿大语言文化探索类游学夏令营夏校项目 */
+
+.feat_main .item_CAN_B_pic {
+    display: block;
+    width: 182px;
+    height: 182px;
+    background: url("../images/thumbnails_teen_CAN_B.jpg")/*tpa=http://www.sanyi.org/images/thumbnails_teen_CAN_B.jpg*/ no-repeat;
+    margin: 0 92px;
+}
+
+.item_CAN_B_1 .item_CAN_B_pic{
+    background-position: 0px 0px;
+}
+.item_CAN_B_2 .item_CAN_B_pic{
+    background-position: -182px 0px;
+}
+.item_CAN_B_3 {border-right: 0}
+.item_CAN_B_3 .item_CAN_B_pic{
+    background-position: -364px 0px;
+}
+
+.item_CAN_B_4 .item_CAN_B_pic{
+    background-position: -546px 0px;
+}
+.item_CAN_B_5 .item_CAN_B_pic{
+    background-position: -728px 0px;
+}
+.item_CAN_B_6 {border-right: 0}
+.item_CAN_B_6 .item_CAN_B_pic{
+    background-position: -910px 0px;
+}
+
+.item_CAN_B_7 .item_CAN_B_pic{
+    background-position: -1092px 0px;
+}
+.item_CAN_B_8 .item_CAN_B_pic{
+    background-position: -1274px 0px;
+}
+.item_CAN_B_9 {border-right: 0}
+.item_CAN_B_9 .item_CAN_B_pic{
+    background-position: -1456px 0px;
+}
+
+.item_CAN_B_10 .item_CAN_B_pic{
+    background-position: -1638px 0px;
+}
+.item_CAN_B_11 .item_CAN_B_pic{
+    background-position: -1820px 0px;
+}
+.item_CAN_B_12 {border-right: 0}
+.item_CAN_B_12 .item_CAN_B_pic{
+    background-position: -2002px 0px;
+}
+
+.item_CAN_B_13 .item_CAN_B_pic{
+    background-position: 0px -182px;
+}
+.item_CAN_B_14 .item_CAN_B_pic{
+    background-position: -182px -182px;
+}
+.item_CAN_B_15 {border-right: 0}
+.item_CAN_B_15 .item_CAN_B_pic{
+    background-position: -364px -182px;
+}
+
+.item_CAN_B_16 .item_CAN_B_pic{
+    background-position: -546px -182px;
+}
+.item_CAN_B_17 .item_CAN_B_pic{
+    background-position: -728px -182px;
+}
+.item_CAN_B_18 {border-right: 0}
+.item_CAN_B_18 .item_CAN_B_pic{
+    background-position: -910px -182px;
+}
+
+.item_CAN_B_19 .item_CAN_B_pic{
+    background-position: -1092px -182px;
+}
+.item_CAN_B_20 .item_CAN_B_pic{
+    background-position: -1274px -182px;
+}
+.item_CAN_B_21 {border-right: 0}
+.item_CAN_B_21 .item_CAN_B_pic{
+    background-position: -1456px -182px;
+}
+
+.item_CAN_B_22 .item_CAN_B_pic{
+    background-position: -1638px -182px;
+}
+.item_CAN_B_23 .item_CAN_B_pic{
+    background-position: -1820px -182px;CAN
+}
+.item_CAN_B_24 {border-right: 0}
+.item_CAN_B_24 .item_CAN_B_pic{
+    background-position: -2002px -182px;
+}
+
+/* 加拿大特色类游学夏令营夏校项目(户外夏令营，亲子夏令营，文艺体育类夏令营) */
+
+.feat_main .item_CAN_C_pic {
+    display: block;
+    width: 182px;
+    height: 182px;
+    background: url("../images/thumbnails_teen_CAN_C.jpg")/*tpa=http://www.sanyi.org/images/thumbnails_teen_CAN_C.jpg*/ no-repeat;
+    margin: 0 92px;
+}
+
+.item_CAN_C_1 .item_CAN_C_pic{
+    background-position: 0px 0px;
+}
+.item_CAN_C_2 .item_CAN_C_pic{
+    background-position: -182px 0px;
+}
+.item_CAN_C_3 {border-right: 0}
+.item_CAN_C_3 .item_CAN_C_pic{
+    background-position: -364px 0px;
+}
+
+.item_CAN_C_4 .item_CAN_C_pic{
+    background-position: -546px 0px;
+}
+.item_CAN_C_5 .item_CAN_C_pic{
+    background-position: -728px 0px;
+}
+.item_CAN_C_6 {border-right: 0}
+.item_CAN_C_6 .item_CAN_C_pic{
+    background-position: -910px 0px;
+}
+
+.item_CAN_C_7 .item_CAN_C_pic{
+    background-position: -1092px 0px;
+}
+.item_CAN_C_8 .item_CAN_C_pic{
+    background-position: -1274px 0px;
+}
+.item_CAN_C_9 {border-right: 0}
+.item_CAN_C_9 .item_CAN_C_pic{
+    background-position: -1456px 0px;
+}
+
+.item_CAN_C_10 .item_CAN_C_pic{
+    background-position: -1638px 0px;
+}
+.item_CAN_C_11 .item_CAN_C_pic{
+    background-position: -1820px 0px;
+}
+.item_CAN_C_12 {border-right: 0}
+.item_CAN_C_12 .item_CAN_C_pic{
+    background-position: -2002px 0px;
+}
+
+.item_CAN_C_13 .item_CAN_C_pic{
+    background-position: 0px -182px;
+}
+.item_CAN_C_14 .item_CAN_C_pic{
+    background-position: -182px -182px;
+}
+.item_CAN_C_15 {border-right: 0}
+.item_CAN_C_15 .item_CAN_C_pic{
+    background-position: -364px -182px;
+}
+
+.item_CAN_C_16 .item_CAN_C_pic{
+    background-position: -546px -182px;
+}
+.item_CAN_C_17 .item_CAN_C_pic{
+    background-position: -728px -182px;
+}
+.item_CAN_C_18 {border-right: 0}
+.item_CAN_C_18 .item_CAN_C_pic{
+    background-position: -910px -182px;
+}
+
+.item_CAN_C_19 .item_CAN_C_pic{
+    background-position: -1092px -182px;
+}
+.item_CAN_C_20 .item_CAN_C_pic{
+    background-position: -1274px -182px;
+}
+.item_CAN_C_21 {border-right: 0}
+.item_CAN_C_21 .item_CAN_C_pic{
+    background-position: -1456px -182px;
+}
+
+.item_CAN_C_22 .item_CAN_C_pic{
+    background-position: -1638px -182px;
+}
+.item_CAN_C_23 .item_CAN_C_pic{
+    background-position: -1820px -182px;
+}
+.item_CAN_C_24 {border-right: 0}
+.item_CAN_C_24 .item_CAN_C_pic{
+    background-position: -2002px -182px;
+}
+
+.feat_main .item_CAN_NEW_pic {
+    display: block;
+    width: 182px;
+    height: 182px;
+    background: url("../images/thumbnails_teen_CAN_NEW.jpg")/*tpa=http://www.sanyi.org/images/thumbnails_teen_CAN_NEW.jpg*/ no-repeat;
+    margin: 0 92px;
+}
+
+.item_CAN_NEW_1 .item_CAN_NEW_pic{
+    background-position: 0px 0px;
+}
+.item_CAN_NEW_2 .item_CAN_NEW_pic{
+    background-position: -182px 0px;
+}
+.item_CAN_NEW_3 {border-right: 0}
+.item_CAN_NEW_3 .item_CAN_NEW_pic{
+    background-position: -364px 0px;
+}
+
+.item_CAN_NEW_4 .item_CAN_NEW_pic{
+    background-position: -546px 0px;
+}
+.item_CAN_NEW_5 .item_CAN_NEW_pic{
+    background-position: -728px 0px;
+}
+.item_CAN_NEW_6 {border-right: 0}
+.item_CAN_NEW_6 .item_CAN_NEW_pic{
+    background-position: -910px 0px;
+}
+
+.item_CAN_NEW_7 .item_CAN_NEW_pic{
+    background-position: -1092px 0px;
+}
+.item_CAN_NEW_8 .item_CAN_NEW_pic{
+    background-position: -1274px 0px;
+}
+.item_CAN_NEW_9 {border-right: 0}
+.item_CAN_NEW_9 .item_CAN_NEW_pic{
+    background-position: -1456px 0px;
+}
+
+.item_CAN_NEW_10 .item_CAN_NEW_pic{
+    background-position: -1638px 0px;
+}
+.item_CAN_NEW_11 .item_CAN_NEW_pic{
+    background-position: -1820px 0px;
+}
+.item_CAN_NEW_12 {border-right: 0}
+.item_CAN_NEW_12 .item_CAN_NEW_pic{
+    background-position: -2002px 0px;
+}
+
+.item_CAN_NEW_13 .item_CAN_NEW_pic{
+    background-position: 0px -182px;
+}
+.item_CAN_NEW_14 .item_CAN_NEW_pic{
+    background-position: -182px -182px;
+}
+.item_CAN_NEW_15 {border-right: 0}
+.item_CAN_NEW_15 .item_CAN_NEW_pic{
+    background-position: -364px -182px;
+}
+
+.item_CAN_NEW_16 .item_CAN_NEW_pic{
+    background-position: -546px -182px;
+}
+.item_CAN_NEW_17 .item_CAN_NEW_pic{
+    background-position: -728px -182px;
+}
+.item_CAN_NEW_18 {border-right: 0}
+.item_CAN_NEW_18 .item_CAN_NEW_pic{
+    background-position: -910px -182px;
+}
+
+.item_CAN_NEW_19 .item_CAN_NEW_pic{
+    background-position: -1092px -182px;
+}
+.item_CAN_NEW_20 .item_CAN_NEW_pic{
+    background-position: -1274px -182px;
+}
+.item_CAN_NEW_21 {border-right: 0}
+.item_CAN_NEW_21 .item_CAN_NEW_pic{
+    background-position: -1456px -182px;
+}
+
+.item_CAN_NEW_22 .item_CAN_NEW_pic{
+    background-position: -1638px -182px;
+}
+.item_CAN_NEW_23 .item_CAN_NEW_pic{
+    background-position: -1820px -182px;
+}
+.item_CAN_NEW_24 {border-right: 0}
+.item_CAN_NEW_24 .item_CAN_NEW_pic{
+    background-position: -2002px -182px;
+}
+
+.item_CAN_NEW_25 .item_CAN_NEW_pic{
+    background-position: 0px -364px;
+}
+.item_CAN_NEW_26 .item_CAN_NEW_pic{
+    background-position: -182px -364px;
+}
+.item_CAN_NEW_27 {border-right: 0}
+.item_CAN_NEW_27 .item_CAN_NEW_pic{
+    background-position: -364px -364px;
+}
+
+.item_CAN_NEW_28 .item_CAN_NEW_pic{
+    background-position: -546px -364px;
+}
+.item_CAN_NEW_29 .item_CAN_NEW_pic{
+    background-position: -728px -364px;
+}
+.item_CAN_NEW_30 {border-right: 0}
+.item_CAN_NEW_30 .item_CAN_NEW_pic{
+    background-position: -910px -364px;
+}
+
+.item_CAN_NEW_31 .item_CAN_NEW_pic{
+    background-position: -1092px -364px;
+}
+.item_CAN_NEW_32 .item_CAN_NEW_pic{
+    background-position: -1274px -364px;
+}
+.item_CAN_NEW_33 {border-right: 0}
+.item_CAN_NEW_33 .item_CAN_NEW_pic{
+    background-position: -1456px -364px;
+}
+
+.item_CAN_NEW_34 .item_CAN_NEW_pic{
+    background-position: -1638px -364px;
+}
+.item_CAN_NEW_35 .item_CAN_NEW_pic{
+    background-position: -1820px -364px;
+}
+.item_CAN_NEW_36 {border-right: 0}
+.item_CAN_NEW_36 .item_CAN_NEW_pic{
+    background-position: -2002px -364px;
+}
+
+.item_CAN_NEW_37 .item_CAN_NEW_pic{
+    background-position: 0px -546px;
+}
+.item_CAN_NEW_38 .item_CAN_NEW_pic{
+    background-position: -182px -546px;
+}
+.item_CAN_NEW_39 {border-right: 0}
+.item_CAN_NEW_39 .item_CAN_NEW_pic{
+    background-position: -364px -546px;
+}
+
+.item_CAN_NEW_40 .item_CAN_NEW_pic{
+    background-position: -546px -546px;
+}
+.item_CAN_NEW_41 .item_CAN_NEW_pic{
+    background-position: -728px -546px;
+}
+.item_CAN_NEW_42 {border-right: 0}
+.item_CAN_NEW_42 .item_CAN_NEW_pic{
+    background-position: -910px -546px;
+}
+
+.item_CAN_NEW_43 .item_CAN_NEW_pic{
+    background-position: -1092px -546px;
+}
+.item_CAN_NEW_44 .item_CAN_NEW_pic{
+    background-position: -1274px -546px;
+}
+.item_CAN_NEW_45 {border-right: 0}
+.item_CAN_NEW_45 .item_CAN_NEW_pic{
+    background-position: -1456px -546px;
+}
+
+.item_CAN_NEW_46 .item_CAN_NEW_pic{
+    background-position: -1638px -546px;
+}
+.item_CAN_NEW_47 .item_CAN_NEW_pic{
+    background-position: -1820px -546px;
+}
+.item_CAN_NEW_48 {border-right: 0}
+.item_CAN_NEW_48 .item_CAN_NEW_pic{
+    background-position: -2002px -546px;
+}
+
+.item_CAN_NEW_49 .item_CAN_NEW_pic{
+    background-position: 0px -728px;
+}
+.item_CAN_NEW_50 .item_CAN_NEW_pic{
+    background-position: -182px -728px;
+}
+.item_CAN_NEW_51 {border-right: 0}
+.item_CAN_NEW_51 .item_CAN_NEW_pic{
+    background-position: -364px -728px;
+}
+
+.item_CAN_NEW_52 .item_CAN_NEW_pic{
+    background-position: -546px -728px;
+}
+.item_CAN_NEW_53 .item_CAN_NEW_pic{
+    background-position: -728px -728px;
+}
+.item_CAN_NEW_54 {border-right: 0}
+.item_CAN_NEW_54 .item_CAN_NEW_pic{
+    background-position: -910px -728px;
+}
+
+.item_CAN_NEW_55 .item_CAN_NEW_pic{
+    background-position: -1092px -728px;
+}
+.item_CAN_NEW_56 .item_CAN_NEW_pic{
+    background-position: -1274px -728px;
+}
+.item_CAN_NEW_57 {border-right: 0}
+.item_CAN_NEW_57 .item_CAN_NEW_pic{
+    background-position: -1456px -728px;
+}
+
+.item_CAN_NEW_58 .item_CAN_NEW_pic{
+    background-position: -1638px -728px;
+}
+.item_CAN_NEW_59 .item_CAN_NEW_pic{
+    background-position: -1820px -728px;
+}
+.item_CAN_NEW_60 {border-right: 0}
+.item_CAN_NEW_60 .item_CAN_NEW_pic{
+    background-position: -2002px -728px;
+}
+
+/* 青少年夏季加拿大游学 Ends */
+
+/* 青少年夏季欧洲游学 Starts */
+
+/* 欧洲学术类游学夏令营夏校项目 */
+
+.feat_main .item_EU_A_pic {
+    display: block;
+    width: 182px;
+    height: 182px;
+    background: url("../images/thumbnails_teen_EU_A.jpg")/*tpa=http://www.sanyi.org/images/thumbnails_teen_EU_A.jpg*/ no-repeat;
+    margin: 0 92px;
+}
+
+.item_EU_A_1 .item_EU_A_pic{
+    background-position: 0px 0px;
+}
+.item_EU_A_2 .item_EU_A_pic{
+    background-position: -182px 0px;
+}
+.item_EU_A_3 {border-right: 0}
+.item_EU_A_3 .item_EU_A_pic{
+    background-position: -364px 0px;
+}
+
+.item_EU_A_4 .item_EU_A_pic{
+    background-position: -546px 0px;
+}
+.item_EU_A_5 .item_EU_A_pic{
+    background-position: -728px 0px;
+}
+.item_EU_A_6 {border-right: 0}
+.item_EU_A_6 .item_EU_A_pic{
+    background-position: -910px 0px;
+}
+
+.item_EU_A_7 .item_EU_A_pic{
+    background-position: -1092px 0px;
+}
+.item_EU_A_8 .item_EU_A_pic{
+    background-position: -1274px 0px;
+}
+.item_EU_A_9 {border-right: 0}
+.item_EU_A_9 .item_EU_A_pic{
+    background-position: -1456px 0px;
+}
+
+.item_EU_A_10 .item_EU_A_pic{
+    background-position: -1638px 0px;
+}
+.item_EU_A_11 .item_EU_A_pic{
+    background-position: 0px -182px;
+}
+.item_EU_A_12 {border-right: 0}
+.item_EU_A_12 .item_EU_A_pic{
+    background-position: -182px -182px;
+}
+
+.item_EU_A_13 .item_EU_A_pic{
+    background-position: -364px -182px;
+}
+.item_EU_A_14 .item_EU_A_pic{
+    background-position: -546px -182px;
+}
+.item_EU_A_15 {border-right: 0}
+.item_EU_A_15 .item_EU_A_pic{
+    background-position: -728px -182px;
+}
+
+.item_EU_A_16 .item_EU_A_pic{
+    background-position: -910px -182px;
+}
+.item_EU_A_17 .item_EU_A_pic{
+    background-position: -1092px -182px;
+}
+.item_EU_A_18 {border-right: 0}
+.item_EU_A_18 .item_EU_A_pic{
+    background-position: -1274px -182px;
+}
+
+/* 欧洲语言文化探索类游学夏令营夏校项目 */
+
+.feat_main .item_EU_B_pic {
+    display: block;
+    width: 182px;
+    height: 182px;
+    background: url("../images/thumbnails_teen_EU_B.jpg")/*tpa=http://www.sanyi.org/images/thumbnails_teen_EU_B.jpg*/ no-repeat;
+    margin: 0 92px;
+}
+
+.item_EU_B_1 .item_EU_B_pic{
+    background-position: 0px 0px;
+}
+.item_EU_B_2 .item_EU_B_pic{
+
+    background-position: -182px 0px;
+}
+.item_EU_B_3 {border-right: 0}
+.item_EU_B_3 .item_EU_B_pic{
+    background-position: -364px 0px;
+}
+
+.item_EU_B_4 .item_EU_B_pic{
+    background-position: -546px 0px;
+}
+.item_EU_B_5 .item_EU_B_pic{
+
+    background-position: -728px 0px;
+}
+.item_EU_B_6 {border-right: 0}
+.item_EU_B_6 .item_EU_B_pic{
+    background-position: -910px 0px;
+}
+
+.item_EU_B_7 .item_EU_B_pic{
+    background-position: -1092px 0px;
+}
+.item_EU_B_8 .item_EU_B_pic{
+
+    background-position: -1274px 0px;
+}
+.item_EU_B_9 {border-right: 0}
+.item_EU_B_9 .item_EU_B_pic{
+    background-position: -1456px 0px;
+}
+
+.item_EU_B_10 .item_EU_B_pic{
+    background-position: -1638px 0px;
+}
+.item_EU_B_11.item_EU_B_pic{
+
+    background-position: 0px -182px;
+}
+.item_EU_B_12 {border-right: 0}
+.item_EU_B_12 .item_EU_B_pic{
+    background-position: -182px -182px;
+}
+
+.item_EU_B_13 .item_EU_B_pic{
+    background-position: -364px -182px;
+}
+.item_EU_B_14.item_EU_B_pic{
+
+    background-position: -546px -182px;
+}
+.item_EU_B_15 {border-right: 0}
+.item_EU_B_15 .item_EU_B_pic{
+    background-position: -728px -182px;
+}
+
+.item_EU_B_16 .item_EU_B_pic{
+    background-position: -910px -182px;
+}
+.item_EU_B_17.item_EU_B_pic{
+
+    background-position: -1092px -182px;
+}
+.item_EU_B_18 {border-right: 0}
+.item_EU_B_18 .item_EU_B_pic{
+    background-position: -1274px -182px;
+}
+
+/* 欧洲特色类游学夏令营夏校项目(户外夏令营，亲子夏令营，文艺体育类夏令营) */
+
+.feat_main .item_EU_C_pic {
+    display: block;
+    width: 182px;
+    height: 182px;
+    background: url("../images/thumbnails_teen_EU_C.jpg")/*tpa=http://www.sanyi.org/images/thumbnails_teen_EU_C.jpg*/ no-repeat;
+    margin: 0 92px;
+}
+
+.item_EU_C_1 .item_EU_C_pic{
+    background-position: 0px 0px;
+}
+.item_EU_C_2 .item_EU_C_pic{
+
+    background-position: -182px 0px;
+}
+.item_EU_C_3 {border-right: 0}
+.item_EU_C_3 .item_EU_C_pic{
+    background-position: -364px 0px;
+}
+
+.item_EU_C_4 .item_EU_C_pic{
+    background-position: -546px 0px;
+}
+.item_EU_C_5 .item_EU_C_pic{
+
+    background-position: -728px 0px;
+}
+.item_EU_C_6 {border-right: 0}
+.item_EU_C_6 .item_EU_C_pic{
+    background-position: -910px 0px;
+}
+
+.item_EU_C_7 .item_EU_C_pic{
+    background-position: -1092px 0px;
+}
+.item_EU_C_8 .item_EU_C_pic{
+
+    background-position: -1274px 0px;
+}
+.item_EU_C_9 {border-right: 0}
+.item_EU_C_9 .item_EU_C_pic{
+    background-position: -1456px 0px;
+}
+
+.item_EU_C_10 .item_EU_C_pic{
+    background-position: -1638px 0px;
+}
+.item_EU_C_11.item_EU_C_pic{
+
+    background-position: 0px -182px;
+}
+.item_EU_C_12 {border-right: 0}
+.item_EU_C_12 .item_EU_C_pic{
+    background-position: -182px -182px;
+}
+
+.item_EU_C_13 .item_EU_C_pic{
+    background-position: -364px -182px;
+}
+.item_EU_C_14.item_EU_C_pic{
+
+    background-position: -546px -182px;
+}
+.item_EU_C_15 {border-right: 0}
+.item_EU_C_15 .item_EU_C_pic{
+    background-position: -728px -182px;
+}
+
+.item_EU_C_16 .item_EU_C_pic{
+    background-position: -910px -182px;
+}
+.item_EU_C_17.item_EU_C_pic{
+
+    background-position: -1092px -182px;
+}
+.item_EU_C_18 {border-right: 0}
+.item_EU_C_18 .item_EU_C_pic{
+    background-position: -1274px -182px;
+}
+
+.feat_main .item_EU_NEW_pic {
+    display: block;
+    width: 182px;
+    height: 182px;
+    background: url("../images/thumbnails_teen_EU_NEW.jpg")/*tpa=http://www.sanyi.org/images/thumbnails_teen_EU_NEW.jpg*/ no-repeat;
+    margin: 0 92px;
+}
+
+.item_EU_NEW_1 .item_EU_NEW_pic{
+    background-position: 0px 0px;
+}
+.item_EU_NEW_2 .item_EU_NEW_pic{
+    background-position: -182px 0px;
+}
+.item_EU_NEW_3 {border-right: 0}
+.item_EU_NEW_3 .item_EU_NEW_pic{
+    background-position: -364px 0px;
+}
+
+.item_EU_NEW_4 .item_EU_NEW_pic{
+    background-position: -546px 0px;
+}
+.item_EU_NEW_5 .item_EU_NEW_pic{
+    background-position: -728px 0px;
+}
+.item_EU_NEW_6 {border-right: 0}
+.item_EU_NEW_6 .item_EU_NEW_pic{
+    background-position: -910px 0px;
+}
+
+.item_EU_NEW_7 .item_EU_NEW_pic{
+    background-position: -1092px 0px;
+}
+.item_EU_NEW_8 .item_EU_NEW_pic{
+    background-position: -1274px 0px;
+}
+.item_EU_NEW_9 {border-right: 0}
+.item_EU_NEW_9 .item_EU_NEW_pic{
+    background-position: -1456px 0px;
+}
+
+.item_EU_NEW_10 .item_EU_NEW_pic{
+    background-position: -1638px 0px;
+}
+.item_EU_NEW_11 .item_EU_NEW_pic{
+    background-position: -1820px 0px;
+}
+.item_EU_NEW_12 {border-right: 0}
+.item_EU_NEW_12 .item_EU_NEW_pic{
+    background-position: -2002px 0px;
+}
+
+.item_EU_NEW_13 .item_EU_NEW_pic{
+    background-position: 0px -182px;
+}
+.item_EU_NEW_14 .item_EU_NEW_pic{
+    background-position: -182px -182px;
+}
+.item_EU_NEW_15 {border-right: 0}
+.item_EU_NEW_15 .item_EU_NEW_pic{
+    background-position: -364px -182px;
+}
+
+.item_EU_NEW_16 .item_EU_NEW_pic{
+    background-position: -546px -182px;
+}
+.item_EU_NEW_17 .item_EU_NEW_pic{
+    background-position: -728px -182px;
+}
+.item_EU_NEW_18 {border-right: 0}
+.item_EU_NEW_18 .item_EU_NEW_pic{
+    background-position: -910px -182px;
+}
+
+.item_EU_NEW_19 .item_EU_NEW_pic{
+    background-position: -1092px -182px;
+}
+.item_EU_NEW_20 .item_EU_NEW_pic{
+    background-position: -1274px -182px;
+}
+.item_EU_NEW_21 {border-right: 0}
+.item_EU_NEW_21 .item_EU_NEW_pic{
+    background-position: -1456px -182px;
+}
+
+.item_EU_NEW_22 .item_EU_NEW_pic{
+    background-position: -1638px -182px;
+}
+.item_EU_NEW_23 .item_EU_NEW_pic{
+    background-position: -1820px -182px;
+}
+.item_EU_NEW_24 {border-right: 0}
+.item_EU_NEW_24 .item_EU_NEW_pic{
+    background-position: -2002px -182px;
+}
+
+.item_EU_NEW_25 .item_EU_NEW_pic{
+    background-position: 0px -364px;
+}
+.item_EU_NEW_26 .item_EU_NEW_pic{
+    background-position: -182px -364px;
+}
+.item_EU_NEW_27 {border-right: 0}
+.item_EU_NEW_27 .item_EU_NEW_pic{
+    background-position: -364px -364px;
+}
+
+.item_EU_NEW_28 .item_EU_NEW_pic{
+    background-position: -546px -364px;
+}
+.item_EU_NEW_29 .item_EU_NEW_pic{
+    background-position: -728px -364px;
+}
+.item_EU_NEW_30 {border-right: 0}
+.item_EU_NEW_30 .item_EU_NEW_pic{
+    background-position: -910px -364px;
+}
+
+.item_EU_NEW_31 .item_EU_NEW_pic{
+    background-position: -1092px -364px;
+}
+.item_EU_NEW_32 .item_EU_NEW_pic{
+    background-position: -1274px -364px;
+}
+.item_EU_NEW_33 {border-right: 0}
+.item_EU_NEW_33 .item_EU_NEW_pic{
+    background-position: -1456px -364px;
+}
+
+.item_EU_NEW_34 .item_EU_NEW_pic{
+    background-position: -1638px -364px;
+}
+.item_EU_NEW_35 .item_EU_NEW_pic{
+    background-position: -1820px -364px;
+}
+.item_EU_NEW_36 {border-right: 0}
+.item_EU_NEW_36 .item_EU_NEW_pic{
+    background-position: -2002px -364px;
+}
+
+.item_EU_NEW_37 .item_EU_NEW_pic{
+    background-position: 0px -546px;
+}
+.item_EU_NEW_38 .item_EU_NEW_pic{
+    background-position: -182px -546px;
+}
+.item_EU_NEW_39 {border-right: 0}
+.item_EU_NEW_39 .item_EU_NEW_pic{
+    background-position: -364px -546px;
+}
+
+.item_EU_NEW_40 .item_EU_NEW_pic{
+    background-position: -546px -546px;
+}
+.item_EU_NEW_41 .item_EU_NEW_pic{
+    background-position: -728px -546px;
+}
+.item_EU_NEW_42 {border-right: 0}
+.item_EU_NEW_42 .item_EU_NEW_pic{
+    background-position: -910px -546px;
+}
+
+.item_EU_NEW_43 .item_EU_NEW_pic{
+    background-position: -1092px -546px;
+}
+.item_EU_NEW_44 .item_EU_NEW_pic{
+    background-position: -1274px -546px;
+}
+.item_EU_NEW_45 {border-right: 0}
+.item_EU_NEW_45 .item_EU_NEW_pic{
+    background-position: -1456px -546px;
+}
+
+.item_EU_NEW_46 .item_EU_NEW_pic{
+    background-position: -1638px -546px;
+}
+.item_EU_NEW_47 .item_EU_NEW_pic{
+    background-position: -1820px -546px;
+}
+.item_EU_NEW_48 {border-right: 0}
+.item_EU_NEW_48 .item_EU_NEW_pic{
+    background-position: -2002px -546px;
+}
+
+.item_EU_NEW_49 .item_EU_NEW_pic{
+    background-position: 0px -728px;
+}
+.item_EU_NEW_50 .item_EU_NEW_pic{
+    background-position: -182px -728px;
+}
+.item_EU_NEW_51 {border-right: 0}
+.item_EU_NEW_51 .item_EU_NEW_pic{
+    background-position: -364px -728px;
+}
+
+.item_EU_NEW_52 .item_EU_NEW_pic{
+    background-position: -546px -728px;
+}
+.item_EU_NEW_53 .item_EU_NEW_pic{
+    background-position: -728px -728px;
+}
+.item_EU_NEW_54 {border-right: 0}
+.item_EU_NEW_54 .item_EU_NEW_pic{
+    background-position: -910px -728px;
+}
+
+.item_EU_NEW_55 .item_EU_NEW_pic{
+    background-position: -1092px -728px;
+}
+.item_EU_NEW_56 .item_EU_NEW_pic{
+    background-position: -1274px -728px;
+}
+.item_EU_NEW_57 {border-right: 0}
+.item_EU_NEW_57 .item_EU_NEW_pic{
+    background-position: -1456px -728px;
+}
+
+.item_EU_NEW_58 .item_EU_NEW_pic{
+    background-position: -1638px -728px;
+}
+.item_EU_NEW_59 .item_EU_NEW_pic{
+    background-position: -1820px -728px;
+}
+.item_EU_NEW_60 {border-right: 0}
+.item_EU_NEW_60 .item_EU_NEW_pic{
+    background-position: -2002px -728px;
+}
+
+/* 青少年夏季欧洲游学 Ends */
+
+/* 青少年更多地区游学 Starts */
+
+.feat_main .item_teen_more_pic {
+    display: block;
+    width: 182px;
+    height: 183px;
+    background: url("../images/thumbnails_teen_more.jpg")/*tpa=http://www.sanyi.org/images/thumbnails_teen_more.jpg*/ no-repeat;
+    margin: 0 92px;
+}
+
+/* 青少年美国游学尾巴更多地区游学项目 */
+.item_US_F_1 .item_teen_more_pic{
+    background-position: 0px -182px;
+}
+.item_US_F_2 .item_teen_more_pic{
+
+    background-position: 0px -364px;
+}
+.item_US_F_3 {border-right: 0}
+.item_US_F_3 .item_teen_more_pic{
+    background-position: 0px -546px;
+}
+
+/* 青少年英国游学尾巴更多地区游学项目 */
+.item_UK_F_1 .item_teen_more_pic{
+    background-position: 0px 0px;
+}
+.item_UK_F_2 .item_teen_more_pic{
+
+    background-position: 0px -364px;
+}
+.item_UK_F_3 {border-right: 0}
+.item_UK_F_3 .item_teen_more_pic{
+    background-position: 0px -546px;
+}
+
+/* 青少年夏季加拿大游学尾巴更多地区游学项目 */
+.item_CAN_F_1 .item_teen_more_pic{
+    background-position: 0px 0px;
+}
+.item_CAN_F_2 .item_teen_more_pic{
+
+    background-position: 0px -182px;
+}
+.item_CAN_F_3 {border-right: 0}
+.item_CAN_F_3 .item_teen_more_pic{
+    background-position: 0px -546px;
+}
+
+
+/* 青少年夏季欧洲游学尾巴更多地区游学项目 */
+.item_EU_F_1 .item_teen_more_pic{
+    background-position: 0px 0px;
+}
+.item_EU_F_2 .item_teen_more_pic{
+
+    background-position: 0px -182px;
+}
+.item_EU_F_3 {border-right: 0}
+.item_EU_F_3 .item_teen_more_pic{
+    background-position: 0px -364px;
+}
+
+
+
+
+/* 青少年更多地区游学 Ends */
+
+/* 青少年夏季游学 Ends */
+
+
+
+
+/* 青少年冬季游学 Starts */
+
+
+.feat_main .item_WIN_pic {
+    display: block;
+    width: 182px;
+    height: 182px;
+    background: url("../images/thumbnails_teen_WIN.jpg")/*tpa=http://www.sanyi.org/images/thumbnails_teen_WIN.jpg*/ no-repeat;
+    margin: 0 92px;
+}
+ 
+.item_WIN_1 .item_WIN_pic{
+    background-position: 0px 0px;
+}
+.item_WIN_2 .item_WIN_pic{
+    background-position: -182px 0px;
+}
+.item_WIN_3 {border-right: 0}
+.item_WIN_3 .item_WIN_pic{
+    background-position: -364px 0px;
+}
+.item_WIN_4 .item_WIN_pic{
+    background-position: -546px 0px;
+}
+.item_WIN_5 .item_WIN_pic{
+    background-position: -728px 0px;
+}
+.item_WIN_6 {border-right: 0}
+.item_WIN_6 .item_WIN_pic{
+    background-position: -910px 0px;
+}
+.item_WIN_7 .item_WIN_pic{
+    background-position: -1092px 0px;
+}
+.item_WIN_8 .item_WIN_pic{
+    background-position: -1274px 0px;
+}
+.item_WIN_9 {border-right: 0}
+.item_WIN_9 .item_WIN_pic{
+    background-position: -1456px 0px;
+}
+.item_WIN_10 .item_WIN_pic{
+    background-position: -1638px 0px;
+}
+.item_WIN_11 .item_WIN_pic{
+    background-position: -1820px 0px;
+}
+.item_WIN_12 {border-right: 0}
+.item_WIN_12 .item_WIN_pic{
+    background-position: -2002px 0px;
+}
+.item_WIN_13 .item_WIN_pic{
+    background-position: 0px -182px;
+}
+.item_WIN_14 .item_WIN_pic{
+    background-position: -182px -182px;
+}
+.item_WIN_15 {border-right: 0}
+.item_WIN_15 .item_WIN_pic{
+    background-position: -364px -182px;
+}
+.item_WIN_16 .item_WIN_pic{
+    background-position: -546px -182px;
+}
+.item_WIN_17 .item_WIN_pic{
+    background-position: -728px -182px;
+}
+.item_WIN_18 {border-right: 0}
+.item_WIN_18 .item_WIN_pic{
+    background-position: -910px -182px;
+}
+.item_WIN_19 .item_WIN_pic{
+    background-position: -1092px -182px;
+}
+.item_WIN_20 .item_WIN_pic{
+    background-position: -1274px -182px;
+}
+.item_WIN_21 {border-right: 0}
+.item_WIN_21 .item_WIN_pic{
+    background-position: -1456px -182px;
+}
+/* 青少年冬季游学 Ends */
+
+
+
+/* 成人游学 Starts */
+
+.feat_main .item_AD_pic {
+    display: block;
+    width: 182px;
+    height: 182px;
+    background: url("../images/thumbnails_adult.jpg")/*tpa=http://www.sanyi.org/images/thumbnails_adult.jpg*/ no-repeat;
+    margin: 0 92px;
+}
+
+/* 美国成人游学 */
+
+.item_AD_A_1 .item_AD_pic{
+    background-position: 0px 0px;
+}
+.item_AD_A_2 .item_AD_pic{
+
+    background-position: 0px -182px;
+}
+.item_AD_A_3 {border-right: 0}
+.item_AD_A_3 .item_AD_pic{
+    background-position: 0px -364px;
+}
+
+.item_AD_A_4 .item_AD_pic{
+    background-position: 0px -546px;
+}
+.item_AD_A_5 .item_AD_pic{
+
+    background-position: 0px -728px;
+}
+.item_AD_A_6 {border-right: 0}
+.item_AD_A_6 .item_AD_pic{
+    background-position: 0px -910px;
+}
+
+.item_AD_A_7 .item_AD_pic{
+    background-position: 0px -1092px;
+}
+.item_AD_A_8 .item_AD_pic{
+
+    background-position: 0px -1274px;
+}
+.item_AD_A_9 {border-right: 0}
+.item_AD_A_9 .item_AD_pic{
+    background-position: 0px -1456px;
+}
+
+.item_AD_A_10 .item_AD_pic{
+    background-position: 0px -1638px;
+}
+.item_AD_A_11.item_AD_pic{
+
+    background-position: 0px -1820px;
+}
+.item_AD_A_12 {border-right: 0}
+.item_AD_A_12 .item_AD_pic{
+    background-position: 0px -2002px;
+}
+
+/* 英国成人游学 */
+.item_AD_B_1 .item_AD_pic{
+    background-position: -182px 0px;
+}
+.item_AD_B_2 .item_AD_pic{
+
+    background-position: -182px -182px;
+}
+.item_AD_B_3 {border-right: 0}
+.item_AD_B_3 .item_AD_pic{
+    background-position: -182px -364px;
+}
+
+.item_AD_B_4 .item_AD_pic{
+    background-position: -182px -546px;
+}
+.item_AD_B_5 .item_AD_pic{
+
+    background-position: -182px -728px;
+}
+.item_AD_B_6 {border-right: 0}
+.item_AD_B_6 .item_AD_pic{
+    background-position: -182px -910px;
+}
+
+.item_AD_B_7 .item_AD_pic{
+    background-position: -182px -1092px;
+}
+.item_AD_B_8 .item_AD_pic{
+
+    background-position: -182px -1274px;
+}
+.item_AD_B_9 {border-right: 0}
+.item_AD_B_9 .item_AD_pic{
+    background-position: -182px -1456px;
+}
+
+.item_AD_B_10 .item_AD_pic{
+    background-position: -182px -1638px;
+}
+.item_AD_B_11 .item_AD_pic{
+
+    background-position: -182px -1820px;
+}
+.item_AD_B_12 {border-right: 0}
+.item_AD_B_12 .item_AD_pic{
+    background-position: -182px -2002px;
+}
+
+/* 加拿大成人游学 */
+.item_AD_C_1 .item_AD_pic{
+    background-position: -364px 0px;
+}
+.item_AD_C_2 .item_AD_pic{
+
+    background-position: -364px -182px;
+}
+.item_AD_C_3 {border-right: 0}
+.item_AD_C_3 .item_AD_pic{
+    background-position: -364px -364px;
+}
+
+.item_AD_C_4 .item_AD_pic{
+    background-position: -364px -546px;
+}
+.item_AD_C_5 .item_AD_pic{
+
+    background-position: -364px -728px;
+}
+.item_AD_C_6 {border-right: 0}
+.item_AD_C_6 .item_AD_pic{
+    background-position: -364px -910px;
+}
+
+.item_AD_C_7 .item_AD_pic{
+    background-position: -364px -1092px;
+}
+.item_AD_C_8 .item_AD_pic{
+
+    background-position: -364px -1274px;
+}
+.item_AD_C_9 {border-right: 0}
+.item_AD_C_9 .item_AD_pic{
+    background-position: -364px -1456px;
+}
+
+.item_AD_C_10 .item_AD_pic{
+    background-position: -364px -1638px;
+}
+.item_AD_C_11 .item_AD_pic{
+
+    background-position: -364px -1820px;
+}
+.item_AD_C_12 {border-right: 0}
+.item_AD_C_12 .item_AD_pic{
+    background-position: -364px -2002px;
+}
+
+/* 其他地区成人游学 */
+.item_AD_D_1 .item_AD_pic{
+    background-position: -546px 0px;
+}
+.item_AD_D_2 .item_AD_pic{
+
+    background-position: -546px -182px;
+}
+.item_AD_D_3 {border-right: 0}
+.item_AD_D_3 .item_AD_pic{
+    background-position: -546px -364px;
+}
+
+.item_AD_D_4 .item_AD_pic{
+    background-position: -546px -546px;
+}
+.item_AD_D_5 .item_AD_pic{
+
+    background-position: -546px -728px;
+}
+.item_AD_D_6 {border-right: 0}
+.item_AD_D_6 .item_AD_pic{
+    background-position: -546px -910px;
+}
+
+.item_AD_D_7 .item_AD_pic{
+    background-position: -546px -1092px;
+}
+.item_AD_D_8 .item_AD_pic{
+
+    background-position: -546px -1274px;
+}
+.item_AD_D_9 {border-right: 0}
+.item_AD_D_9 .item_AD_pic{
+    background-position: -546px -1456px;
+}
+
+.item_AD_D_10 .item_AD_pic{
+    background-position: -546px -1638px;
+}
+.item_AD_D_11 .item_AD_pic{
+
+    background-position: -546px -1820px;
+}
+.item_AD_D_12 {border-right: 0}
+.item_AD_D_12 .item_AD_pic{
+    background-position: -546px -2002px;
+}
+
+/* 亲子游学夏令营 */
+.item_AD_E_1 .item_AD_pic{
+    background-position: -728px 0px;
+}
+.item_AD_E_2 .item_AD_pic{
+
+    background-position: -728px -182px;
+}
+.item_AD_E_3 {border-right: 0}
+.item_AD_E_3 .item_AD_pic{
+    background-position: -728px -364px;
+}
+
+.item_AD_E_4 .item_AD_pic{
+    background-position: -728px -546px;
+}
+.item_AD_E_5 .item_AD_pic{
+
+    background-position: -728px -728px;
+}
+.item_AD_E_6 {border-right: 0}
+.item_AD_E_6 .item_AD_pic{
+    background-position: -728px -910px;
+}
+
+.item_AD_E_7 .item_AD_pic{
+    background-position: -728px -1092px;
+}
+.item_AD_E_8 .item_AD_pic{
+
+    background-position: -728px -1274px;
+}
+.item_AD_E_9 {border-right: 0}
+.item_AD_E_ .item_AD_pic{
+    background-position: -728px -1456px;
+}
+
+.item_AD_E_10 .item_AD_pic{
+    background-position: -728px -1638px;
+}
+.item_AD_E_11 .item_AD_pic{
+
+    background-position: -728px -1820px;
+}
+.item_AD_E_12 {border-right: 0}
+.item_AD_E_12 .item_AD_pic{
+    background-position: -728px -2002px;
+}
+
+/* 成人游学 Ends */
+
+
+/* 临时活动1 Starts */
+
+.feat_main .item_ACT1_pic {
+    display: block;
+    width: 182px;
+    height: 182px;
+    background: url("../images/thumbnails_act201811.jpg")/*tpa=http://www.sanyi.org/images/thumbnails_act201811.jpg*/ no-repeat;
+    margin: 0 92px;
+}
+
+/* 美国成人游学 */
+
+.item_act201811_1 .item_ACT1_pic{
+    background-position: 0px 0px;
+}
+.item_act201811_2 .item_ACT1_pic{
+    background-position: -182px 0px;
+}
+.item_act201811_3 {border-right: 0}
+.item_act201811_3 .item_ACT1_pic{
+    background-position: -364px 0px;
+}
+.item_act201811_4 .item_ACT1_pic{
+    background-position: -546px 0px;
+}
+.item_act201811_5 .item_ACT1_pic{
+    background-position: -728px 0px;
+}
+.item_act201811_6 {border-right: 0}
+.item_act201811_6 .item_ACT1_pic{
+    background-position: -910px 0px;
+}
+
+
+/* 临时活动1 Ends */
+
+
+.ft_items {
+    height:100%;
+    background: #fff;
+    padding: 30px 0 20px;
+}
+.ft_items h3 {
+    /*background: url(../images/sy_title1.png) no-repeat center;*/
+}
+.up_events {
+    height: 385px;
+    background: #eff4f7;
+    padding: 50px 0 45px;
+}
+.up_events h3 {
+    /*background: url(../images/sy_title2.png) no-repeat center;*/
+}
+.item_feedback {
+    height: 6200px;
+    background: #eff4f7;
+    padding: 50px 0 45px;
+}
+.lt_news {
+    height: 342px;
+    background: #fff;
+    padding: 30px 0 114px;
+}
+.lt_news h3 {
+    /*background: url(../images/sy_title3.png) no-repeat center;*/
+}
+.feat_main {
+    width: 1100px;
+    margin: 0 auto
+}
+.item h4 a{
+    font-size: 24px;
+    color: #555555;
+    padding: 38px 0 22px;
+    text-align: center;
+    display: block;
+}
+.item h4 .hover {
+    color: #90209b;
+}
+.item p a{
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0 40px;
+    color: #999999;
+    display: block;
+}
+.item p .hover {
+    color: #333333;
+}
+.ue_set {
+    width: 1100px;
+    margin: 0 auto
+}
+.ue_news {
+    width: 480px;
+    height: 320px;
+    float: left;
+    margin: 40px 35px 0;
+    background: #dae3e8;
+    position: relative;
+}
+.ue_news span {
+    font-size: 14px;
+    color: #000;
+}
+.ue_news .ue_title {
+    font-size: 18px;
+    color: #666666;
+    font-weight: bold;
+    line-height: 44px;
+    margin-left: 18px;
+}
+.ue_news p {
+    color: #90969a;
+    /*font-size: 10px;*/
+    font-family: 'Arial';
+    line-height: 24px;
+    margin-left: 18px;
+}
+
+.ue_news:hover .ue_news_click{
+    background: #90209b;
+}
+.ue_news .ue_news_click{
+    position: absolute;
+    top: 286px;
+    left: 18px;
+    
+    padding: 9px 10px;
+    background: #999999;
+    color: #fff;
+}
+
+.lt_news img {
+    float: left;
+    margin-left: 36px;
+}
+.lt_txt {
+    float: left;
+    margin-left: 44px;
+}
+.lt_set {
+    width: 1100px;
+    margin: 54px auto 0;
+    position: relative;
+}
+
+/*按钮效果 范围较小 Starts*/
+.lt_set2 {
+    width: 100px;
+    margin: 54px auto 0;
+    position: relative;
+}
+.lt_set2:hover .lt_click {
+    background: #90209b;
+}
+/*按钮效果 范围较小 Ends*/
+
+.lt_txt h4 {
+    font-size: 25px;
+    color: #555555;
+    margin-bottom: 25px;
+}
+.lt_txt p {
+    color: #999999;
+    font-size: 14px;
+    line-height: 24px;
+    width: 565px;
+}
+.lt_txt .lt_click {
+    font-size:14px;
+    padding: 9px 10px;
+    background: #999999;
+    color: #fff;
+    display: block;
+    width: 57px;
+    position: absolute;
+    top:153px;
+    left:336px;
+}
+.lt_set:hover .lt_click {
+    background: #90209b;
+}
+/*首页banner切换 start*/
+.sy_banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.banner_pic {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 300%;
+    height: 450px;
+}
+.banner_pic li {
+
+    float: left;
+    width: 33.333333%;
+    height: 450px;
+    position: relative;
+}
+/*.banner_pic li .show {display: block;}*/
+.banner1 .ban1_txt {
+    /*display: none;*/
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    width: 694px;
+    height: 114px;
+    filter:none;     /*处理IE9浏览器中的滤镜效果*/
+    background-color:rgba(0,0,0,0.4);
+    filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#66000000', endColorstr='#66000000');
+    /*background:url(../images/sy2_txt.png) no-repeat;*/
+    margin-left: -347px;
+    margin-top: -32px;
+    /*opacity: 0;*/
+    font-size: 54px;
+    color: #fff;
+    text-align: center;
+    line-height: 114px;
+}
+
+.banner2 .ban2_txt {
+    /*display: none;*/
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    width: 694px;
+    height: 114px;
+    filter:none;     /*处理IE9浏览器中的滤镜效果*/
+    background-color:rgba(0,0,0,0.4);
+    filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#66000000', endColorstr='#66000000');
+    /*background:url(../images/sy2_txt.png) no-repeat;*/
+    margin-left: -347px;
+    margin-top: -32px;
+    /*opacity: 0;*/
+    font-size: 54px;
+    color: #fff;
+    text-align: center;
+    line-height: 114px;
+}
+
+.banner3 .ban3_txt {
+    /*display: none;*/
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    width: 694px;
+    height: 114px;
+    filter:none;     /*处理IE9浏览器中的滤镜效果*/
+    background-color:rgba(0,0,0,0.4);
+    filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#66000000', endColorstr='#66000000');
+    /*background:url(../images/sy2_txt.png) no-repeat;*/
+    margin-left: -347px;
+    margin-top: -32px;
+    /*opacity: 0;*/
+    font-size: 54px;
+    color: #fff;
+    text-align: center;
+    line-height: 114px;
+}
+
+.banner4 .ban4_txt {
+    /*display: none;*/
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    width: 694px;
+    height: 114px;
+    filter:none;     /*处理IE9浏览器中的滤镜效果*/
+    background-color:rgba(0,0,0,0.4);
+    filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#66000000', endColorstr='#66000000');
+    /*background:url(../images/sy2_txt.png) no-repeat;*/
+    margin-left: -347px;
+    margin-top: -32px;
+    /*opacity: 0;*/
+    font-size: 54px;
+    color: #fff;
+    text-align: center;
+    line-height: 114px;
+}
+.banner_btn {
+    position: absolute;
+    width: 1085px;
+    height: 38px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -542px;
+}
+.banner_btn li{
+    width: 270px;
+
+    font-size: 16px;
+    height: 38px;
+    float: left;
+    text-align: center;
+    line-height: 38px;
+    margin-right: 1px;
+}
+.banner_btn a {
+    color: #817f7f;
+    display: block;
+}
+ .banner_btn .btn_select a{
+    color: #fff;
+    font-size: 20px;
+}
+.btn1{
+    filter:none;     /*处理IE9浏览器中的滤镜效果*/
+    background-color: rgba(96,25,134,0.8);
+    filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#CC90209B', endColorstr='#CC90209B');
+}
+.btn1.btn_select{
+    background: #601986;
+}
+.btn2{
+    filter:none;     /*处理IE9浏览器中的滤镜效果*/
+    background-color:rgba(130,44,181,0.8);
+    filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#CC000000', endColorstr='#CC000000');
+}
+.btn2.btn_select{
+    background: #822cb5;
+}
+.btn3{
+    filter:none;     /*处理IE9浏览器中的滤镜效果*/
+    background-color:rgba(60,53,167,0.8);
+    filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#CC1B164C', endColorstr='#CC1B164C');
+}
+.btn3.btn_select {
+    background: #3c35a7;
+}
+.btn4{
+    filter:none;     /*处理IE9浏览器中的滤镜效果*/
+    background-color:rgba(27,22,76,0.8);
+    filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#CC1B164C', endColorstr='#CC1B164C');
+}
+.btn4.btn_select {
+    background: #1b164c;
+}
+.ban1_txt {
+    width: 1100px;
+    margin: 0 auto;
+    padding-left: 24px;
+    /*display: none;*/
+}
+.ban1_txt h4 {
+    width: 143px;
+    height: 46px;
+    /*background:url(../images/ban1_txt.png) no-repeat center;*/
+    margin-top: 45px;
+    opacity: 0;
+}
+.ban1_txt .ban1_p {
+    color: #000;
+    line-height: 20px;
+    margin-top: 6px;
+    opacity: 0
+}
+.ban1_txt .ban1_title {
+    font-size: 32px;
+    color: #90209b;
+    font-weight: bold;
+    margin-top: 20px;
+    display: block;
+    opacity: 0
+}
+.nav .select {
+    background: #000;
+}
+.ban_nav {
+    width: 1054px;
+    height: 141px;
+    /*background:url(../images/ban_nav_bg.png) no-repeat;*/
+    margin-top: 62px;
+}
+.ban_nav ul {
+    width: 1054px;
+    height: 141px;
+    padding: 24px 0 0 146px;
+}
+.ban_nav li {
+    width: 110px;
+    height: 90px;
+    margin-right: 108px;
+
+    text-align: center;
+}
+.ban_nav span{
+    width: 67px;
+    height: 66px;
+    display: block;
+    background:url("../images/ban_nav.png")/*tpa=http://www.sanyi.org/images/ban_nav.png*/ no-repeat;
+    position: absolute;
+    left: 50%;
+    margin-left: -33px;
+    background-position: 0 0;
+}
+.ban_nav a{
+    display: block;
+    position: relative;
+}
+.ban_nav p {
+    color: #fff;
+    padding-top: 76px;
+}
+.ban_nav .nav_icon1 {
+    background-position: 0 0;
+}
+.ban_nav .nav_icon2 {
+    background-position: -67px 0;
+}
+.ban_nav .nav_icon3 {
+    background-position: -134px 0;
+}
+.ban_nav .nav_icon4 {
+    background-position: -201px 0;
+}
+.ban_nav .nav_icon1:hover {
+    background-position: 0 -66px;
+}
+.ban_nav .nav_icon2:hover {
+    background-position: -67px -66px;
+}
+.ban_nav .nav_icon3:hover {
+    background-position: -134px -66px;
+}
+.ban_nav .nav_icon4:hover {
+    background-position: -201px -66px;
+}
+/*首页banner切换 end*/
+/*首页底部最新新闻切换 start*/
+.lt_silde {
+    width: 1100px;
+    height: 282px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.lt_silde ul{
+    height: 282px;
+    position: absolute;
+}
+.lt_silde li {
+    float: left;
+}
+.lt_prev,.lt_next{
+    position: absolute;
+    display: block;
+    width: 42px;
+    height: 42px;
+    background:transparent  url("../images/csg.png")/*tpa=http://www.sanyi.org/images/csg.png*/ no-repeat top left;
+
+}
+.lt_prev {
+    top: 240px;
+    right: 110px;
+
+    /*background:url(../images/sl.png);*/
+}
+.lt_prev:hover{
+    display:block;
+    background:transparent  url("../images/csg.png")/*tpa=http://www.sanyi.org/images/csg.png*/ no-repeat top left;
+     background-position: 0 -875px; width: 42px; height: 42px;
+}
+.lt_next {
+    top: 240px;
+    right: 40px;
+    /*background:url(../images/sr.png);*/
+}
+.lt_next:hover{
+    display:block;
+    background:transparent  url("../images/csg.png")/*tpa=http://www.sanyi.org/images/csg.png*/ no-repeat top left;
+    background-position: 0 -961px; width: 42px; height: 42px;
+}
+/*首页底部最新新闻切换 end*/
+/*切换css动画*/
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+@-moz-keyframes fadeInUp /* Firefox */{
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+@-o-keyframes fadeInUp{
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.fadeInUp {
+  -webkit-animation: fadeInUp 1.5s forwards;
+          animation: fadeInUp 1.5s forwards;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 40%, 0);
+            transform: translate3d(0, 40%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+@-moz-keyframes fadeIn /* Firefox */{
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 40%, 0);
+            transform: translate3d(0, 40%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+@-o-keyframes fadeIn /* Opera */{
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 40%, 0);
+            transform: translate3d(0, 40%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 40%, 0);
+            transform: translate3d(0, 40%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.fadeIn {
+  -webkit-animation: fadeIn 1.5s forwards;
+          animation: fadeIn 1.5s forwards;
+}
+/*首页 end*/
+
+/*文字标题的图 Starts */
+.titles {
+    display:block;
+    background:transparent  url("../images/titles.png")/*tpa=http://www.sanyi.org/images/titles.png*/ no-repeat top left;
+}
+/*主页四个文字标题的图 Starts */
+.title1{ background-position: 0 -432px; width: 1100px; height: 35px; }
+.title2{ background-position: 0 0px; width: 1100px; height: 35px; }
+.title3{ background-position: 0 -72px; width: 1100px; height: 35px; }
+.title4{ background-position: 0 -144px; width: 1100px; height: 35px; }
+.title5{ background-position: 0 -216px; width: 1100px; height: 35px; }
+.title6{ background-position: 0 -288px; width: 1100px; height: 35px; }
+/*美国游学青少年项目文字标题的图 Starts */
+.ustitle1{ background-position: 0 -684px; width: 1100px; height: 60px; }
+.ustitle2{ background-position: 0 -756px; width: 1100px; height: 60px; }
+.ustitle3{ background-position: 0 -828px; width: 1100px; height: 60px; }
+.ustitle4{ background-position: 0 -900px; width: 1100px; height: 60px; }
+.ustitle5{ background-position: 0 -972px; width: 1100px; height: 60px; }
+/*英国游学青少年项目文字标题的图 Starts */
+.uktitle1{ background-position: 0 -1044px; width: 1100px; height: 60px; }
+.uktitle2{ background-position: 0 -1116px; width: 1100px; height: 60px; }
+.uktitle3{ background-position: 0 -1188px; width: 1100px; height: 60px; }
+.uktitle4{ background-position: 0 -1260px; width: 1100px; height: 60px; }
+.uktitle5{ background-position: 0 -1332px; width: 1100px; height: 60px; }
+/*加拿大游学青少年项目文字标题的图 Starts */
+.cantitle1{ background-position: 0 -1404px; width: 1100px; height: 60px; }
+.cantitle2{ background-position: 0 -1476px; width: 1100px; height: 60px; }
+.cantitle3{ background-position: 0 -1548px; width: 1100px; height: 60px; }
+.cantitle4{ background-position: 0 -1620px; width: 1100px; height: 60px; }
+.cantitle5{ background-position: 0 -1692px; width: 1100px; height: 60px; }
+/*欧洲游学青少年项目文字标题的图 Starts */
+.eutitle1{ background-position: 0 -1764px; width: 1100px; height: 60px; }
+.eutitle2{ background-position: 0 -1836px; width: 1100px; height: 60px; }
+.eutitle3{ background-position: 0 -1908px; width: 1100px; height: 60px; }
+.eutitle4{ background-position: 0 -1980px; width: 1100px; height: 60px; }
+.eutitle5{ background-position: 0 -2052px; width: 1100px; height: 60px; }
+/*更多青少年游学项目文字标题的图 Starts */
+.moretitle1{ background-position: 0 -612px; width: 1100px; height: 60px; }
+/*成人游学项目文字标题的图 Starts */
+.adtitle1{ background-position: 0 -2124px; width: 1100px; height: 60px; }
+.adtitle2{ background-position: 0 -2196px; width: 1100px; height: 60px; }
+.adtitle3{ background-position: 0 -2268px; width: 1100px; height: 60px; }
+.adtitle4{ background-position: 0 -2340px; width: 1100px; height: 60px; }
+.adtitle5{ background-position: 0 -2412px; width: 1100px; height: 60px; }
+/*文字标题的图 Ends */
+
+
+
+
+/*sprite start*/
+.sprite {
+    display:block;
+    background:transparent  url("../images/csg.png")/*tpa=http://www.sanyi.org/images/csg.png*/ no-repeat top left;
+}
+
+
+.sprite-arrow{ background-position: 0 0; width: 21px; height: 11px; position: absolute;bottom: -10px;right: 8px;}
+.sprite-arrow_line_left{ background-position: 0 -12px; width: 118px; height: 25px; }
+.sprite-arrow_line_right{ background-position: 0 -38px; width: 116px; height: 25px; }
+.sprite-ban1_txt{ background-position: 0 -64px; width: 143px; height: 46px; }
+.sprite-ban_nav_bg{ background-position: 0 -111px; width: 0px; height: 141px; }
+.sprite-down{ background-position: 0 -253px; width: 14px; height: 8px; }
+.sprite-hd_title1{ background-position: 0 -262px; width: 1100px; height: 57px; }
+.sprite-hd_title2{ background-position: 0 -320px; width: 1100px; height: 57px; }
+.sprite-loading{ background-position: 0 -378px; width: 162px; height: 85px; }
+.sprite-logo{ background-position: 0 -464px; width: 565px; height: 83px; }
+.sprite-next{ background-position: 0 -548px; width: 70px; height: 70px; }
+.sprite-next_hover{ background-position: 0 -619px; width: 70px; height: 70px; }
+.sprite-prev{ background-position: 0 -690px; width: 70px; height: 70px; }
+.sprite-prev_hover{ background-position: 0 -761px; width: 70px; height: 70px; }
+.sprite-sl{ background-position: 0 -832px; width: 42px; height: 42px; }
+.sprite-sl_hover{ background-position: 0 -875px; width: 42px; height: 42px; }
+.sprite-sr{ background-position: 0 -918px; width: 42px; height: 42px; }
+.sprite-sr_hover{ background-position: 0 -961px; width: 42px; height: 42px; }
+.sprite-sy2_txt{ background-position: 0 -1004px; width: 694px; height: 114px; }
+.sprite-sy2_txtbg{ background-position: 0 -1119px; width: 694px; height: 114px; }
+.sprite-sy3_txt{ background-position: 0 -1234px; width: 666px; height: 139px; }
+.sprite-sy3_txtbg{ background-position: 0 -1374px; width: 666px; height: 139px; }
+.sprite-sy_title1{ background-position: 0 -1514px; width: 1100px; height: 60px; }
+.sprite-sy_title2{ background-position: 0 -1575px; width: 1100px; height: 60px; }
+.sprite-sy_title3{ background-position: 0 -1636px; width: 1100px; height: 60px; }
+.sprite-tel{ background-position: 0 -1697px; width: 254px; height: 83px; }
+.sprite-tel_num{ background-position: 0 -1781px; width: 100px; height: 33px; }
+.sprite-time_line{ background-position: 0 -1815px; width: 2px; height: 1px; }
+.sprite-tips{ background-position: 0 -1817px; width: 18px; height: 18px; }
+.sprite-year{ background-position: 0 -1836px; width: 12px; height: 12px; }
+.sprite-year_bg{ background-position: 0 -1849px; /* width: 73px; height: 73px; */ }
+.sprite-year_hover{ background-position: 0 -1923px; width: 12px; height: 12px; }
+/*sprite end*/
+
+/* 兼容大屏*/
+@media screen and (min-height: 1080px){
+.time_end{
+    margin-left: -35px;
+    padding: 27.6px 20px;
+}
+}
+@media screen and (max-width:375px){
+.lt_txt p {
+    height: 100px;
+    
+}
+.lt_txt h4{
+    font-size: 20px;
+}
+}
+
+/*add*/
+.submit_banner{
+height: 450px;
+background: url("../images/banner.jpg")/*tpa=http://www.sanyi.org/images/banner.jpg*/ no-repeat center center;
+}
+.submit_banner .banner_label{
+top:400px;
+left:60%;
+background-color:rgba(60,56,54,0.3);
+text-align:center;
+}
+.submit_banner .banner_label .txt_black_s{
+font-size: 30px;
+}
+
+.header .h_logo{
+top:15px;
+left:-27px;
+}
+.header .h_slogan{
+top:15px;
+left:100px;
+}
+
+
+.index_clickmore{
+  margin-top: 20px;
+  float:right;
+  padding: 20px 20px;
+  background: #90209b;
+  color: #fff;
+}
+
+.index_clickmore:hover{
+    color: #fff;
+    background: #90209b;
+}

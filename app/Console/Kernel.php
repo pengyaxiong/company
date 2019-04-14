@@ -27,6 +27,10 @@ class Kernel extends ConsoleKernel
         // $schedule->command('inspire')
         //          ->hourly();
         $schedule->command('command:spider')->dailyAt('05:30');
+        //清除日志
+        $schedule->command('activitylog:clean')->daily();
+        //UV统计
+        $schedule->command('command:uv')->daily();
     }
 
     /**

@@ -1,11 +1,6 @@
 @extends('layouts.admin.partials.application')
 @section('css')
-    <link rel="stylesheet" media="screen" href="/vendor/particles/css/style.css">
-    <style>
-        #particles-js {
-            background-image: url('/vendor/particles/timg.jpg?{!! get_millisecond() !!}');
-        }
-    </style>
+
 @endsection
 @section('content')
     <div class="admin-content">
@@ -18,44 +13,38 @@
             </div>
 
             @include("layouts.admin.partials._flash")
+            <ul class="am-avg-sm-1 am-avg-md-4 am-margin am-padding am-text-center admin-content-list ">
+                <li><a href="javascript:void (0)" class="am-text-success"><span class="am-icon-btn am-icon-file-text"></span><br>推文访问<br>{!! see_num('article') !!}</a></li>
+                <li><a href="javascript:void (0)" class="am-text-warning"><span class="am-icon-btn am-icon-book"></span><br>课程流量<br>{!! see_num('supermarket') !!}</a></li>
+                <li><a href="javascript:void (0)" class="am-text-danger"><span class="am-icon-btn am-icon-recycle"></span><br>总访问量<br>{!! uv() !!}</a></li>
+                <li><a href="javascript:void (0)" class="am-text-secondary"><span class="am-icon-btn am-icon-user-md"></span><br>注册用户<br>{{\App\Models\System\User::count()}}</a></li>
+            </ul>
+            <div class="am-g">
+                <div class="am-u-sm-12">
 
-            @if (Auth::id()<1)
-                <div class="am-g">
-                    <div class="am-u-sm-12">
+                    <div id="statistics_article" style="width: 100%;height:400px;"></div>
 
-                        <div id="statistics_user" style="width: 100%;height:400px;"></div>
-
-                    </div>
                 </div>
+            </div>
 
-                <hr data-am-widget="divider" style="" class="am-divider am-divider-default"/>
+            <hr data-am-widget="divider" style="" class="am-divider am-divider-default"/>
 
-                <div class="am-g">
-                    <div class="am-u-sm-12">
+            <div class="am-g">
+                <div class="am-u-sm-12">
 
-                        <div id="statistics_flow" style="width: 100%;height:600px;"></div>
+                    <div id="statistics_customer" style="width: 100%;height:600px;"></div>
 
-                    </div>
                 </div>
-            @else
-                <div class="am-g">
-                    <div class="am-u-sm-12">
-                        <div id="particles-js">
-                            <p>
-                                {{$bibel['cn']}}
-                                <br/>
-                                {{$bibel['en']}}
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            @endif
+            </div>
             @include('layouts.admin.partials._footer')
         </div>
     </div>
 @endsection
 @section('js')
-    <script src="/vendor/particles/js/particles.js"></script>
-    <script src="/vendor/particles/js/app.js"></script>
+    <script src="/vendor/echarts/echarts.min.js"></script>
+    <script src="/vendor/echarts/macarons.js"></script>
+
+    <script src="/js/visualization/statistics_customer.js"></script>
+    <script src="/js/visualization/statistics_article.js"></script>
 @endsection
 

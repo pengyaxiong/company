@@ -65,27 +65,27 @@
                             </div>
                         </div>
 
-                        <div class="am-g am-margin-top">
-                            <div class="am-u-sm-4 am-u-md-3 am-text-right">
-                                首页背景图 <span class="am-badge am-badge-secondary am-round">background img</span>
-                            </div>
+                        {{--<div class="am-g am-margin-top">--}}
+                            {{--<div class="am-u-sm-4 am-u-md-3 am-text-right">--}}
+                                {{--首页背景图 <span class="am-badge am-badge-secondary am-round">background img</span>--}}
+                            {{--</div>--}}
 
-                            <div class="am-u-sm-8 am-u-md-4 am-u-end col-end">
-                                <div class="am-form-group am-form-file">
-                                    <button type="button" class="am-btn am-btn-success am-btn-sm">
-                                        <i class="am-icon-cloud-upload" id="background_loading"></i> 选择要上传的背景图
-                                    </button>
-                                    <input type="file" id="background_img_upload">
-                                </div>
-                            </div>
-                        </div>
+                            {{--<div class="am-u-sm-8 am-u-md-4 am-u-end col-end">--}}
+                                {{--<div class="am-form-group am-form-file">--}}
+                                    {{--<button type="button" class="am-btn am-btn-success am-btn-sm">--}}
+                                        {{--<i class="am-icon-cloud-upload" id="background_loading"></i> 选择要上传的背景图--}}
+                                    {{--</button>--}}
+                                    {{--<input type="file" id="background_img_upload">--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
 
-                        <div class="am-g">
-                            <div class="am-u-sm-4 am-u-md-3 am-text-right">&nbsp;</div>
-                            <div class="am-u-sm-8 am-u-md-4 am-u-end col-end">
-                                <img src="/vendor/particles/timg.jpg?{!! get_millisecond() !!}" id="background_img_show" style="max-height: 150px;">
-                            </div>
-                        </div>
+                        {{--<div class="am-g">--}}
+                            {{--<div class="am-u-sm-4 am-u-md-3 am-text-right">&nbsp;</div>--}}
+                            {{--<div class="am-u-sm-8 am-u-md-4 am-u-end col-end">--}}
+                                {{--<img src="/vendor/particles/timg.jpg?{!! get_millisecond() !!}" id="background_img_show" style="max-height: 150px;">--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
 
                         <div class="am-g am-margin-top">
                             <div class="am-u-sm-4 am-u-md-3 am-text-right">

@@ -450,5 +450,392 @@ class PermissionsTableSeeder extends Seeder
             'label' => '删除',
             'parent_id' => 50,
         ]);
+
+        /*文章管理（查看）*/
+        Permission::create([
+            'id' => 57,
+            'name' => 'cms.article.show',
+            'label' => '多选删除',
+            'parent_id' => 37,
+        ]);
+
+
+        /**
+         * 商城管理
+         */
+        Permission::create([
+            'id' => 58,
+            'name' => 'shop',
+            'label' => '商城管理',
+            'parent_id' => 0,
+            'icon' => 'am-icon-paper-plane',
+        ]);
+        /*
+         * 商品管理
+         */
+        Permission::create([
+            'id' => 59,
+            'name' => 'shop.product.index',
+            'label' => '商品管理',
+            'parent_id' => 58,
+            'icon' => 'am-icon-code-fork',
+        ]);
+        /*商品管理（新增）*/
+        Permission::create([
+            'id' => 60,
+            'name' => 'shop.product.create',
+            'label' => '新增',
+            'parent_id' => 59,
+        ]);
+        /*商品管理（保存）*/
+        Permission::create([
+            'id' => 61,
+            'name' => 'shop.product.store',
+            'label' => '保存',
+            'parent_id' => 59,
+        ]);
+        /*商品管理（更新属性）*/
+        Permission::create([
+            'id' => 62,
+            'name' => 'shop.product.is_something',
+            'label' => '更新属性',
+            'parent_id' => 59,
+        ]);
+        /*商品管理（编辑）*/
+        Permission::create([
+            'id' => 63,
+            'name' => 'shop.product.edit',
+            'label' => '编辑',
+            'parent_id' => 59,
+        ]);
+        /*商品管理（更新）*/
+        Permission::create([
+            'id' => 64,
+            'name' => 'shop.product.update',
+            'label' => '更新',
+            'parent_id' => 59,
+        ]);
+        /*商品管理（软删除）*/
+        Permission::create([
+            'id' => 65,
+            'name' => 'shop.product.destroy',
+            'label' => '软删除',
+            'parent_id' => 59,
+        ]);
+        /*商品管理（多选软删除）*/
+        Permission::create([
+            'id' => 66,
+            'name' => 'shop.product.destroy_checked',
+            'label' => '多选软删除',
+            'parent_id' => 59,
+        ]);
+        /*商品管理（回收站）*/
+        Permission::create([
+            'id' => 67,
+            'name' => 'shop.product.trash',
+            'label' => '回收站',
+            'parent_id' => 59,
+        ]);
+        /*商品管理（恢复）*/
+        Permission::create([
+            'id' => 68,
+            'name' => 'shop.product.restore',
+            'label' => '恢复',
+            'parent_id' => 59,
+        ]);
+        /*商品管理（多选恢复）*/
+        Permission::create([
+            'id' => 69,
+            'name' => 'shop.product.restore_checked',
+            'label' => '多选恢复',
+            'parent_id' => 59,
+        ]);
+        /*商品管理（删除）*/
+        Permission::create([
+            'id' => 70,
+            'name' => 'shop.product.force_destroy',
+            'label' => '删除',
+            'parent_id' => 59,
+        ]);
+        /*商品管理（多选删除）*/
+        Permission::create([
+            'id' => 71,
+            'name' => 'shop.product.force_destroy_checked',
+            'label' => '多选删除',
+            'parent_id' => 59,
+        ]);
+        /*商品管理（删除相册图片）*/
+        Permission::create([
+            'id' => 72,
+            'name' => 'shop.product.destroy_gallery',
+            'label' => '删除相册图片',
+            'parent_id' => 59,
+        ]);
+        /*商品管理（更新库存）*/
+        Permission::create([
+            'id' => 107,
+            'name' => 'shop.product.change_stock',
+            'label' => '更新库存',
+            'parent_id' => 59,
+        ]);
+
+
+        /*
+       * 栏目管理
+       */
+        Permission::create([
+            'id' => 73,
+            'name' => 'shop.category.index',
+            'label' => '栏目管理',
+            'parent_id' => 58,
+            'icon' => 'am-icon-code-fork',
+        ]);
+        /*栏目管理（新增）*/
+        Permission::create([
+            'id' => 74,
+            'name' => 'shop.category.create',
+            'label' => '新增',
+            'parent_id' => 73,
+        ]);
+        /*栏目管理（保存）*/
+        Permission::create([
+            'id' => 75,
+            'name' => 'shop.category.store',
+            'label' => '保存',
+            'parent_id' => 73,
+        ]);
+        /*栏目管理（更新属性）*/
+        Permission::create([
+            'id' => 76,
+            'name' => 'shop.category.is_something',
+            'label' => '更新属性',
+            'parent_id' => 73,
+        ]);
+        /*栏目管理（排序）*/
+        Permission::create([
+            'id' => 77,
+            'name' => 'shop.category.sort_order',
+            'label' => '排序',
+            'parent_id' => 73,
+        ]);
+        /*栏目管理（编辑）*/
+        Permission::create([
+            'id' => 78,
+            'name' => 'cms.category.edit',
+            'label' => '编辑',
+            'parent_id' => 73,
+        ]);
+        /*栏目管理（更新）*/
+        Permission::create([
+            'id' => 79,
+            'name' => 'shop.category.update',
+            'label' => '更新',
+            'parent_id' => 73,
+        ]);
+        /*栏目管理（删除）*/
+        Permission::create([
+            'id' => 80,
+            'name' => 'shop.category.destroy',
+            'label' => '删除',
+            'parent_id' => 73,
+        ]);
+
+        /*
+     * 品牌管理
+     */
+        Permission::create([
+            'id' => 81,
+            'name' => 'shop.brand.index',
+            'label' => '品牌管理',
+            'parent_id' => 58,
+            'icon' => 'am-icon-code-fork',
+        ]);
+        /*品牌管理（新增）*/
+        Permission::create([
+            'id' => 82,
+            'name' => 'shop.brand.create',
+            'label' => '新增',
+            'parent_id' => 81,
+        ]);
+        /*品牌管理（保存）*/
+        Permission::create([
+            'id' => 83,
+            'name' => 'shop.brand.store',
+            'label' => '保存',
+            'parent_id' => 81,
+        ]);
+        /*品牌管理（更新属性）*/
+        Permission::create([
+            'id' => 84,
+            'name' => 'shop.brand.is_something',
+            'label' => '更新属性',
+            'parent_id' => 81,
+        ]);
+        /*品牌管理（排序）*/
+        Permission::create([
+            'id' => 85,
+            'name' => 'shop.brand.sort_order',
+            'label' => '排序',
+            'parent_id' => 81,
+        ]);
+        /*品牌管理（编辑）*/
+        Permission::create([
+            'id' => 86,
+            'name' => 'cms.brand.edit',
+            'label' => '编辑',
+            'parent_id' => 81,
+        ]);
+        /*品牌管理（更新）*/
+        Permission::create([
+            'id' => 87,
+            'name' => 'shop.brand.update',
+            'label' => '更新',
+            'parent_id' => 81,
+        ]);
+        /*品牌管理（删除）*/
+        Permission::create([
+            'id' => 88,
+            'name' => 'shop.brand.destroy',
+            'label' => '删除',
+            'parent_id' => 81,
+        ]);
+
+        /*
+         * 物流运费
+         */
+        Permission::create([
+            'id' => 89,
+            'name' => 'shop.express.index',
+            'label' => '物流运费',
+            'parent_id' => 58,
+            'icon' => 'am-icon-code-fork',
+        ]);
+        /*物流运费（新增）*/
+        Permission::create([
+            'id' => 90,
+            'name' => 'shop.express.create',
+            'label' => '新增',
+            'parent_id' => 89,
+        ]);
+        /*物流运费（保存）*/
+        Permission::create([
+            'id' => 91,
+            'name' => 'shop.express.store',
+            'label' => '保存',
+            'parent_id' => 89,
+        ]);
+        /*物流运费（更新属性）*/
+        Permission::create([
+            'id' => 92,
+            'name' => 'shop.express.is_something',
+            'label' => '更新属性',
+            'parent_id' => 89,
+        ]);
+        /*物流运费（排序）*/
+        Permission::create([
+            'id' => 93,
+            'name' => 'shop.express.sort_order',
+            'label' => '排序',
+            'parent_id' => 89,
+        ]);
+        /*物流运费（编辑）*/
+        Permission::create([
+            'id' => 94,
+            'name' => 'cms.express.edit',
+            'label' => '编辑',
+            'parent_id' => 89,
+        ]);
+        /*物流运费（更新）*/
+        Permission::create([
+            'id' => 95,
+            'name' => 'shop.express.update',
+            'label' => '更新',
+            'parent_id' => 89,
+        ]);
+        /*物流运费（删除）*/
+        Permission::create([
+            'id' => 96,
+            'name' => 'shop.express.destroy',
+            'label' => '删除',
+            'parent_id' => 89,
+        ]);
+
+        /*
+       * 订单管理
+       */
+        Permission::create([
+            'id' => 97,
+            'name' => 'shop.order.index',
+            'label' => '订单管理',
+            'parent_id' => 58,
+            'icon' => 'am-icon-code-fork',
+        ]);
+        /*订单管理（新增）*/
+        Permission::create([
+            'id' => 98,
+            'name' => 'shop.order.create',
+            'label' => '新增',
+            'parent_id' => 97,
+        ]);
+        /*订单管理（保存）*/
+        Permission::create([
+            'id' => 99,
+            'name' => 'shop.order.store',
+            'label' => '保存',
+            'parent_id' => 97,
+        ]);
+        /*订单管理（配货）*/
+        Permission::create([
+            'id' => 100,
+            'name' => 'shop.order.picking',
+            'label' => '配货',
+            'parent_id' => 97,
+        ]);
+        /*订单管理（发货）*/
+        Permission::create([
+            'id' => 101,
+            'name' => 'shop.order.shipping',
+            'label' => '发货',
+            'parent_id' => 97,
+        ]);
+        /*订单管理（完成）*/
+        Permission::create([
+            'id' => 102,
+            'name' => 'shop.order.finish',
+            'label' => '完成',
+            'parent_id' => 97,
+        ]);
+        /*订单管理（编辑）*/
+        Permission::create([
+            'id' => 103,
+            'name' => 'cms.order.edit',
+            'label' => '编辑',
+            'parent_id' => 97,
+        ]);
+        /*订单管理（更新）*/
+        Permission::create([
+            'id' => 104,
+            'name' => 'shop.order.update',
+            'label' => '更新',
+            'parent_id' => 97,
+        ]);
+        /*订单管理（删除）*/
+        Permission::create([
+            'id' => 105,
+            'name' => 'shop.order.destroy',
+            'label' => '删除',
+            'parent_id' => 97,
+        ]);
+
+        /*
+     * 会员管理
+     */
+        Permission::create([
+            'id' => 106,
+            'name' => 'shop.customer.index',
+            'label' => '会员管理',
+            'parent_id' => 58,
+            'icon' => 'am-icon-code-fork',
+        ]);
     }
 }

@@ -17,8 +17,10 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-
 Route::group(['domain' => env('ADMIN_DOMAIN'), 'namespace' => 'Api', 'as' => 'api.'], function () {
+
+    //流量统计
+    Route::get('statistics_article', 'VisualizationController@statistics_article');
 
     //用户管理
     require 'api/user.php';

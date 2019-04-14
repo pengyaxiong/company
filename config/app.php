@@ -177,7 +177,8 @@ return [
 
         //跨域Cors
         Barryvdh\Cors\ServiceProvider::class,
-
+        //用户记录
+        Spatie\Activitylog\ActivitylogServiceProvider::class,
     ],
 
     /*

@@ -13,7 +13,7 @@
 
 
 //前台
-Route::group(['namespace' => 'Home','as' => 'home.', 'domain' => env('HOME_DOMAIN')], function () {
+Route::group(['middleware' => ['uv'],'namespace' => 'Home','as' => 'home.', 'domain' => env('HOME_DOMAIN')], function () {
 
     //前台首页
     Route::get('/', 'HomeController@index')->name('index');
@@ -28,9 +28,10 @@ Route::group(['domain' => env('ADMIN_DOMAIN')], function () {
 
         //后台首页
         Route::get('/admin', 'HomeController@index')->name('admin');
-
+        //商城管理
+        require 'admin/shop.php';
         //工具管理
-        require 'admin/tool.php';
+        //require 'admin/tool.php';
         //内容管理
         require 'admin/cms.php';
         //系统管理

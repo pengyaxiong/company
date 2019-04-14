@@ -66,6 +66,8 @@ class Kernel extends HttpKernel
 
         'sidebar' => \App\Http\Middleware\Sidebar::class,
         'role' => \App\Http\Middleware\Role::class,
+        //UV统计
+        'uv' => \App\Http\Middleware\UV::class,
     ];
 
     /**
