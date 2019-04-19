@@ -60,13 +60,13 @@
                                 </button>
                                 <input type="file" id="image_upload">
                                 <input type="hidden" name="photo_id" value="{{$category->photo_id}}">
-                                <input type="hidden" name="image" value="{{$category->photo->link}}">
+                                <input type="hidden" name="image" value="{{$category->photo->identifier}}">
                             </div>
 
                             <hr data-am-widget="divider" style="" class="am-divider am-divider-dashed"/>
 
                             <div>
-                                {!! image_url($category->photo, ['id'=>'img_show']) !!}
+                                {!! image_url($category, ['id'=>'img_show']) !!}
                             </div>
                         </div>
                     </div>

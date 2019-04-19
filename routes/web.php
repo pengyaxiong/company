@@ -13,10 +13,17 @@
 
 
 //前台
-Route::group(['middleware' => ['uv'],'namespace' => 'Home','as' => 'home.', 'domain' => env('HOME_DOMAIN')], function () {
+Route::group(['middleware' => ['uv'], 'namespace' => 'Home', 'as' => 'home.', 'domain' => env('HOME_DOMAIN')], function () {
 
     //前台首页
     Route::get('/', 'HomeController@index')->name('index');
+});
+
+//微信商城前端'middleware' => ['wechat.oauth','wechat'],
+Route::group(['namespace' => 'Wechat', 'prefix' => 'wechat', 'as' => 'wechat.'], function () {
+
+    //微信商城
+    require 'wechat/shop.php';
 });
 
 //后台
@@ -36,9 +43,26 @@ Route::group(['domain' => env('ADMIN_DOMAIN')], function () {
         require 'admin/cms.php';
         //系统管理
         require 'admin/system.php';
-
+        //广告管理
+        require "admin/ads.php";
         //消息管理
         require 'admin/information.php';
+
+        Route::group(['prefix' => 'wechat', 'namespace' => 'Wechat', 'as' => 'wechat.'], function () {
+
+            // 公众号设置
+            Route::group(['prefix' => 'config'], function () {
+                Route::get('/', 'ConfigController@edit')->name('config.edit');
+                Route::put('/', 'ConfigController@update')->name('config.update');
+            });
+            //微信自定义菜单
+            Route::group(['prefix' => 'menu'], function () {
+                Route::get('edit', 'MenuController@edit')->name('menu.edit');
+                Route::put('update', 'MenuController@update')->name('menu.update');
+                Route::delete('destroy', 'MenuController@destroy')->name('menu.destroy');
+            });
+        });
+
     });
 });
 

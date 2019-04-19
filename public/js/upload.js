@@ -1,6 +1,6 @@
 //文件上传
 var opts = {
-    url: "/system/photo/upload",
+    url: "/system/photo/upload_img",
     type: "POST",
     beforeSend: function () {
         $("#loading").attr("class", "am-icon-spinner am-icon-pulse");

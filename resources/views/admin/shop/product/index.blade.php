@@ -29,6 +29,9 @@
                         <button type="button" class="am-btn am-btn-default" id="destroy_checked">
                             <span class="am-icon-trash-o"></span> 删除
                         </button>
+                        <a type="button" class="am-btn am-btn-default" href="{{route('shop.product.trash')}}">
+                            <span class="am-icon-trash"></span> 回收站
+                        </a>
                     </div>
                 </div>
             </div>
@@ -45,7 +48,7 @@
 
                     <div class="am-form-group">
                         <select data-am-selected="{btnSize: 'sm', maxHeight: 360, searchBox: 1}"
-                                name="category_id[]">
+                                name="category_id" id="change_category">
                             <optgroup label="请选择">
                                 <option value="-1">所有分类</option>
                             </optgroup>
@@ -145,7 +148,7 @@
                                            name="checked_id[]"/></td>
                                 <td>{{$product->id}}</td>
                                 <td>
-                                    {!! image_url($product->photo, ['class'=>'thumb']) !!}
+                                    {!! image_url($product, ['class'=>'thumb']) !!}
                                 </td>
                                 <td>
                                     {{$product->name}}
@@ -233,7 +236,7 @@
 
                 $.ajax({
                     type: "PATCH",
-                    url: "/admin/shop/product/change_stock",
+                    url: "/shop/product/change_stock",
                     data: data,
                     success: function (data) {
                         if (data.status == 0) {
@@ -256,7 +259,7 @@
 
                 $.ajax({
                     type: "DELETE",
-                    url: "/admin/shop/product/destroy_checked",
+                    url: "/shop/product/destroy_checked",
                     data: checked_id,
                     success: function (data) {
                         if (data.status == 0) {
@@ -278,7 +281,7 @@
 
                 $.ajax({
                     type: "PATCH",
-                    url: "/admin/shop/product/is_something",
+                    url: "/shop/product/is_something",
                     data: data,
                     success: function (data) {
                         if (data.status == 0) {
@@ -297,7 +300,7 @@
                     location.href = "{{route('shop.product.index')}}";
                     return false;
                 }
-                var url = "/admin/shop/product?category_id=" + category_id;
+                var url = "/shop/product?category_id=" + category_id;
                 location.href = url;
             })
         });

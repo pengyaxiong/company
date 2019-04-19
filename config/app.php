@@ -179,6 +179,8 @@ return [
         Barryvdh\Cors\ServiceProvider::class,
         //用户记录
         Spatie\Activitylog\ActivitylogServiceProvider::class,
+        //微信
+        Overtrue\LaravelWechat\ServiceProvider::class,
     ],
 
     /*
@@ -228,6 +230,8 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
+        'Wechat' => Overtrue\LaravelWechat\Facade::class,
+        'EasyWeChat' => Overtrue\LaravelWechat\Facade::class,
     ],
 
 ];

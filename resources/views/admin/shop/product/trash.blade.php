@@ -119,7 +119,7 @@
                 var checked_id = $(".checked_id:checked").serialize();
                 $.ajax({
                     type: "DELETE",
-                    url: "/admin/shop/product/force_destroy_checked",
+                    url: "/shop/product/force_destroy_checked",
                     data: checked_id,
                     success: function (data) {
                         if (data.status == 0) {
@@ -142,7 +142,7 @@
                 var checked_id = $(".checked_id:checked").serialize();
                 $.ajax({
                     type: "POST",
-                    url: "/admin/shop/product/restore_checked",
+                    url: "/shop/product/restore_checked",
                     data: checked_id,
 
                     success: function (data) {

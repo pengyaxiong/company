@@ -1,12 +1,13 @@
 <?php
+
 use Spatie\Activitylog\Models\Activity;
 
-function success_data($msg, $data='')
+function success_data($msg, $data = '')
 {
     return array('status' => '0000', 'msg' => $msg, 'datas' => $data);
 }
 
-function error_data($msg, $data='')
+function error_data($msg, $data = '')
 {
     return array('status' => '9999', 'msg' => $msg, 'datas' => $data);
 }
@@ -257,7 +258,49 @@ function indent_category($count)
     return $str;
 }
 
+/**
+ * 微信菜单, 删除空数组
+ * @param $buttons
+ */
+function wechat_menus($request_buttons)
+{
+    $buttons = [];
 
+    foreach ($request_buttons as $key => $value) {
+        if ($value['name'] == "") {
+            continue;
+        }
+
+        $buttons["$key"] = wechat_key_url($value);
+
+        foreach ($value["sub_button"]["list"] as $k => $v) {
+            if ($v['name'] == "") {
+                continue;
+            }
+            $buttons["$key"]["sub_button"]["list"][] = wechat_key_url($v);
+        }
+    }
+    return $buttons;
+}
+
+/**
+ * 订单状态
+ * @param $status
+ * @return mixed
+ */
+function order_status($status)
+{
+    $info = config('admin.order_status');
+    return $info["$status"];
+}
+
+/**
+ * 1=> '下单',       //待支付
+ * 2=> '付款',       //待发货
+ * 3=> '配货',
+ * 4=> '出库',       //待收货
+ * 5=> '交易成功',    //已完成
+ */
 function order_color($status)
 {
     switch ($status) {
@@ -373,7 +416,7 @@ function image_url($model, $attributes = [])
 {
     $attributes_html = build_image_attributes($attributes);
     if ($model->photo->identifier) {
-        return ' <img src="' . env('QINIU_IMAGES_LINK') . $model->image->identifier . '" ' . $attributes_html . '>';
+        return ' <img src="' . env('QINIU_IMAGES_LINK') . $model->photo->identifier . '" ' . $attributes_html . '>';
     }
 }
 
@@ -388,7 +431,7 @@ function thumb_url($model, $attributes = [])
 {
     $attributes_html = build_image_attributes($attributes);
     if ($model->photo->identifier) {
-        return ' <img src="' . env('QINIU_IMAGES_LINK') . $model->image->identifier . '-thumb' . '" ' . $attributes_html . '>';
+        return ' <img src="' . env('QINIU_IMAGES_LINK') . $model->photo->identifier . '-thumb' . '" ' . $attributes_html . '>';
     }
 }
 
@@ -403,6 +446,6 @@ function large_url($model, $attributes = [])
 {
     $attributes_html = build_image_attributes($attributes);
     if ($model->photo->identifier) {
-        return ' <img src="' . env('QINIU_IMAGES_LINK') . $model->image->identifier . '-large' . '" ' . $attributes_html . '>';
+        return ' <img src="' . env('QINIU_IMAGES_LINK') . $model->photo->identifier . '-large' . '" ' . $attributes_html . '>';
     }
 }

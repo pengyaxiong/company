@@ -23,7 +23,7 @@ class BrandController extends Controller
             }
         };
 
-        $brands = Brand::where($where)->orderBy('sort_order')->paginate(env('PAGE_SIZE'));
+        $brands = Brand::where($where)->orderBy('sort_order')->paginate(config('admin.page_size'));
         return view('admin.shop.brand.index', compact('brands'));
     }
     /**

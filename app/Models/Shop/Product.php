@@ -13,7 +13,7 @@ class Product extends Model
 
     public function photo()
     {
-        return $this->belongsTo('App\Models\Photo');
+        return $this->belongsTo('App\Models\System\Photo');
     }
     //每个商品都属于某一个品牌
     public function brand()

@@ -23,8 +23,8 @@
                 <form class="am-form-inline" role="form" method="get">
 
                     <div class="am-form-group">
-                        <input type="text" name="id" class="am-form-field am-input-sm" placeholder="订单号"
-                               value="{{ Request::input('id') }}">
+                        <input type="text" name="order_sn" class="am-form-field am-input-sm" placeholder="订单号"
+                               value="{{ Request::input('order_sn') }}">
                     </div>
 
                     <div class="am-form-group">
@@ -42,11 +42,11 @@
                         <select data-am-selected="{btnSize: 'sm', maxHeight: 360, searchBox: 1}"
                                 name="status" id="">
                             <option value="-1">订单状态</option>
-                            {{--@foreach ($order_status as $key=>$value)--}}
-                                {{--<option value="{{ $key }}" @if($key == Request::input('status')) selected @endif>--}}
-                                    {{--{{ $value }}--}}
-                                {{--</option>--}}
-                            {{--@endforeach--}}
+                            @foreach ($order_status as $key=>$value)
+                                <option value="{{ $key }}" @if($key == Request::input('status')) selected @endif>
+                                    {{ $value }}
+                                </option>
+                            @endforeach
                         </select>
                     </div>
 
@@ -81,7 +81,7 @@
                                                     {{$order->address->name}}
                                                     (<a href="tel:{{$order->address->tel}}">{{$order->address->tel}}</a>)
                                                     <span class="sep">|</span>
-                                                    订单号：<a href="//order.mi.com/user/orderView/1150426350013010">{{$order->id}}</a>
+                                                    订单号：<a href="//order.mi.com/user/orderView/1150426350013010">{{$order->order_sn}}</a>
                                                     {{--<span class="sep">|</span>在线支付--}}
                                                 </p>
                                             </th>
@@ -101,7 +101,7 @@
                                                         <li>
                                                             <div class="figure figure-thumb">
                                                                 <a href="#" target="_blank">
-                                                                    {!! image_url($order_product->product->photo, ['class'=>'thumb', 'width'=>'80', 'height' => '80', 'alt'=>$order_product->product->name]) !!}
+                                                                    {!! image_url($order_product->product, ['class'=>'thumb', 'width'=>'80', 'height' => '80', 'alt'=>$order_product->product->name]) !!}
                                                                 </a>
                                                             </div>
                                                             <p class="name">

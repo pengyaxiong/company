@@ -16,7 +16,7 @@ Route::group(['prefix' => 'system', 'namespace' => 'System', 'as' => 'system.'],
 
         Route::post('upload_icon', 'PhotoController@upload_icon')->name('photo.upload_icon');
         Route::post('upload', 'PhotoController@upload')->name('photo.upload');
-        Route::post('upload', 'PhotoController@upload_img')->name('photo.upload_img');
+        Route::post('upload_img', 'PhotoController@upload_img')->name('photo.upload_img');
         Route::post('upload_background_img', 'PhotoController@upload_background_img')->name('photo.upload_background_img');
     });
 
@@ -32,4 +32,6 @@ Route::group(['prefix' => 'system', 'namespace' => 'System', 'as' => 'system.'],
     Route::patch('user/is_something', 'UserController@is_something')->name('user.is_something');
     Route::resource('user', 'UserController');
     Route::resource('role', 'RoleController');
+
+
 });

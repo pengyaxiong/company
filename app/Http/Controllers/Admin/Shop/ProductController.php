@@ -40,7 +40,7 @@ class ProductController extends Controller
                 $query->where('name', 'like', $search);
             }
 
-            if ($request->has('category_id') and $request->category_id != '') {
+            if ($request->has('category_id') and $request->category_id != '-1') {
 
                 $category_id = $request->category_id;
                 $product_ids = \DB::table('category_product')->where('category_id', $category_id)->pluck('product_id');
@@ -82,7 +82,7 @@ class ProductController extends Controller
             }
         };
 
-        $products = Product::with('brand', 'categories')->where($where)->paginate(env('PAGE_SIZE'));
+        $products = Product::with('brand', 'categories')->where($where)->paginate(config('admin.page_size'));
 
         $this->attributes();
         return view('admin.shop.product.index', compact('products'));
@@ -115,7 +115,7 @@ class ProductController extends Controller
         //相册
         if ($request->has('imgs')) {
             foreach ($request->imgs as $img) {
-                $product->product_galleries()->create(['identifier' => $img]);
+                $product->product_galleries()->create(['photo' => $img]);
             }
         }
 
@@ -157,9 +157,10 @@ class ProductController extends Controller
 
         $product->photo()->update(['identifier' => $request->image]);
         if ($request->has('imgs')) {
+
             foreach ($request->imgs as $img) {
 
-                $product->product_galleries()->create(['identifier' => $img]);
+                $product->product_galleries()->create(['photo' => $img]);
             }
         }
         $product->categories()->sync($request->category_id);

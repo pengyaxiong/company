@@ -621,7 +621,7 @@ class PermissionsTableSeeder extends Seeder
         /*栏目管理（编辑）*/
         Permission::create([
             'id' => 78,
-            'name' => 'cms.category.edit',
+            'name' => 'shop.category.edit',
             'label' => '编辑',
             'parent_id' => 73,
         ]);
@@ -681,7 +681,7 @@ class PermissionsTableSeeder extends Seeder
         /*品牌管理（编辑）*/
         Permission::create([
             'id' => 86,
-            'name' => 'cms.brand.edit',
+            'name' => 'shop.brand.edit',
             'label' => '编辑',
             'parent_id' => 81,
         ]);
@@ -741,7 +741,7 @@ class PermissionsTableSeeder extends Seeder
         /*物流运费（编辑）*/
         Permission::create([
             'id' => 94,
-            'name' => 'cms.express.edit',
+            'name' => 'shop.express.edit',
             'label' => '编辑',
             'parent_id' => 89,
         ]);
@@ -808,7 +808,7 @@ class PermissionsTableSeeder extends Seeder
         /*订单管理（编辑）*/
         Permission::create([
             'id' => 103,
-            'name' => 'cms.order.edit',
+            'name' => 'shop.order.edit',
             'label' => '编辑',
             'parent_id' => 97,
         ]);
@@ -836,6 +836,179 @@ class PermissionsTableSeeder extends Seeder
             'label' => '会员管理',
             'parent_id' => 58,
             'icon' => 'am-icon-code-fork',
+        ]);
+
+        /**
+         * 广告管理
+         */
+        Permission::create([
+            'id' => 108,
+            'name' => 'ads',
+            'label' => '广告管理',
+            'parent_id' => 0,
+            'icon' => 'am-icon-paper-apple',
+        ]);
+        /*
+         * 广告管理
+         */
+        Permission::create([
+            'id' => 109,
+            'name' => 'ads.ad.index',
+            'label' => '广告管理',
+            'parent_id' => 108,
+            'icon' => 'am-icon-code-fork',
+        ]);
+        /*广告管理（新增）*/
+        Permission::create([
+            'id' => 110,
+            'name' => 'ads.ad.create',
+            'label' => '新增',
+            'parent_id' => 109,
+        ]);
+        /*广告管理（保存）*/
+        Permission::create([
+            'id' => 111,
+            'name' => 'ads.ad.store',
+            'label' => '保存',
+            'parent_id' => 109,
+        ]);
+        /*广告管理（更新属性）*/
+        Permission::create([
+            'id' => 112,
+            'name' => 'ads.ad.is_something',
+            'label' => '更新属性',
+            'parent_id' => 109,
+        ]);
+        /*广告管理（编辑）*/
+        Permission::create([
+            'id' => 113,
+            'name' => 'ads.ad.edit',
+            'label' => '编辑',
+            'parent_id' => 109,
+        ]);
+        /*广告管理（更新）*/
+        Permission::create([
+            'id' => 114,
+            'name' => 'ads.ad.update',
+            'label' => '更新',
+            'parent_id' => 109,
+        ]);
+        /*广告管理（软删除）*/
+        Permission::create([
+            'id' => 115,
+            'name' => 'ads.ad.destroy',
+            'label' => '软删除',
+            'parent_id' => 109,
+        ]);
+        /*广告管理（多选软删除）*/
+        Permission::create([
+            'id' => 116,
+            'name' => 'ads.ad.destroy_checked',
+            'label' => '多选软删除',
+            'parent_id' => 109,
+        ]);
+        /*广告管理（回收站）*/
+        Permission::create([
+            'id' => 117,
+            'name' => 'ads.ad.trash',
+            'label' => '回收站',
+            'parent_id' => 109,
+        ]);
+        /*广告管理（恢复）*/
+        Permission::create([
+            'id' => 118,
+            'name' => 'ads.ad.restore',
+            'label' => '恢复',
+            'parent_id' => 109,
+        ]);
+        /*广告管理（多选恢复）*/
+        Permission::create([
+            'id' => 119,
+            'name' => 'ads.ad.restore_checked',
+            'label' => '多选恢复',
+            'parent_id' => 109,
+        ]);
+        /*广告管理（删除）*/
+        Permission::create([
+            'id' => 120,
+            'name' => 'ads.ad.force_destroy',
+            'label' => '删除',
+            'parent_id' => 109,
+        ]);
+        /*广告管理（多选删除）*/
+        Permission::create([
+            'id' => 121,
+            'name' => 'ads.ad.force_destroy_checked',
+            'label' => '多选删除',
+            'parent_id' => 109,
+        ]);
+
+        /*广告管理（多选删除）*/
+        Permission::create([
+            'id' => 130,
+            'name' => 'ads.ad.sort_order',
+            'label' => '排序',
+            'parent_id' => 109,
+        ]);
+
+        /*
+       * 广告栏目管理
+       */
+        Permission::create([
+            'id' => 122,
+            'name' => 'ads.category.index',
+            'label' => '栏目管理',
+            'parent_id' => 108,
+            'icon' => 'am-icon-code-fork',
+        ]);
+        /*栏目管理（新增）*/
+        Permission::create([
+            'id' => 123,
+            'name' => 'ads.category.create',
+            'label' => '新增',
+            'parent_id' => 122,
+        ]);
+        /*栏目管理（保存）*/
+        Permission::create([
+            'id' => 124,
+            'name' => 'ads.category.store',
+            'label' => '保存',
+            'parent_id' => 122,
+        ]);
+        /*栏目管理（更新属性）*/
+        Permission::create([
+            'id' => 125,
+            'name' => 'ads.category.is_something',
+            'label' => '更新属性',
+            'parent_id' => 122,
+        ]);
+        /*栏目管理（排序）*/
+        Permission::create([
+            'id' => 126,
+            'name' => 'ads.category.sort_order',
+            'label' => '排序',
+            'parent_id' => 122,
+        ]);
+        /*栏目管理（编辑）*/
+        Permission::create([
+            'id' => 127,
+            'name' => 'ads.category.edit',
+            'label' => '编辑',
+            'parent_id' => 122,
+        ]);
+        /*栏目管理（更新）*/
+        Permission::create([
+            'id' => 128,
+            'name' => 'ads.category.update',
+            'label' => '更新',
+            'parent_id' => 122,
+        ]);
+        /*栏目管理（删除）*/
+        Permission::create([
+            'id' => 129,
+            'name' => 'ads.category.destroy',
+            'label' => '删除',
+            'parent_id' => 122,
         ]);
     }
 }

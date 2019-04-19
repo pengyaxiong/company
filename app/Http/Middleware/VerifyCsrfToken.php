@@ -23,5 +23,6 @@ class VerifyCsrfToken extends Middleware
 //        'password/reset',
     //Disabling CSRF protection for your API
         'api/*',
+     //   'wechat/order/paid',
     ];
 }

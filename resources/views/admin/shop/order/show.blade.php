@@ -28,7 +28,7 @@
                             </h1>
                             <div class="more clearfix">
                                 <h2 class="subtitle">订单号：
-                                    <span class="tag tag-subsidy">{{$order->id}}</span>
+                                    <span class="tag tag-subsidy">{{$order->order_sn}}</span>
                                 </h2>
                             </div>
                         </div>

@@ -54,8 +54,7 @@
                             <tr data-id="{{$brand->id}}">
                                 <td>{{$brand->id}}</td>
                                 <td>
-                                    <img src="{{$brand->photo->thumb}}" alt="">
-                                    {{--{!! thumb_url($brand, ['class'=>'thumb']) !!}--}}
+                                    {!! thumb_url($brand, ['class'=>'thumb']) !!}
                                 </td>
                                 <td><a href="{{$brand->url}}" target="_blank">{{$brand->name}}</a></td>
 
@@ -124,7 +123,7 @@
                 }
                 $.ajax({
                     type: "PATCH",
-                    url: "/admin/shop/brand/sort_order",
+                    url: "/shop/brand/sort_order",
                     data: data
                 });
             })
@@ -139,7 +138,7 @@
 
                 $.ajax({
                     type: "PATCH",
-                    url: "/admin/shop/brand/is_something",
+                    url: "/shop/brand/is_something",
                     data: data,
                     success: function (data) {
                         if (data.status == 0) {

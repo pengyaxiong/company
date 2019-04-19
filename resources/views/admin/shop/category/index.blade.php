@@ -47,10 +47,9 @@
                             <tr data-id="{{$category->id}}" id="row_{{$category->id}}" class="xParent">
                                 <td>{{$category->id}}</td>
                                 <td>
-                                    {!! thumb_url($category->photo) !!}
+                                    {!! thumb_url($category) !!}
                                 </td>
                                 <td>
-                                    {{ indent_category($category->count) }}
                                     {{$category->name}}
                                 </td>
 
@@ -90,9 +89,9 @@
                                 <tr data-id="{{$c->id}}" class="xChildren child_row_{{$category->id}}">
                                     <td>{{$c->id}}</td>
                                     <td>
-                                    {!! thumb_url($c->photo, ['class'=>'thumb']) !!}
+                                    {!! thumb_url($c, ['class'=>'thumb']) !!}
                                     <td>
-                                        {{ indent_category(2) }}
+                                        {!! indent_category(2) !!}
                                         {{$c->name}}
                                     </td>
 
@@ -152,7 +151,7 @@
 
                 $.ajax({
                     type: "PATCH",
-                    url: "/admin/shop/category/sort_order",
+                    url: "/shop/category/sort_order",
                     data: data,
 
                     success: function (data) {
@@ -174,7 +173,7 @@
 
                 $.ajax({
                     type: "PATCH",
-                    url: "/admin/shop/category/is_something",
+                    url: "/shop/category/is_something",
                     data: data,
                     success: function (data) {
                         if (data.status == 0) {

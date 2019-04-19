@@ -23,12 +23,13 @@ class Cart extends Model
      */
     static function count_cart($carts = null)
     {
-        $user = JWTAuth::parseToken()->authenticate();
-
+        //$user = JWTAuth::parseToken()->authenticate();
+        $openid = session('wechat.customer.openid');
+        $customer = Customer::where('openid', $openid)->first();
         $count = [];
 
         //避免重复查询数据
-        $carts = $carts ? $carts : Cart::with('product')->where('user_id', $user['id'])->get();
+        $carts = $carts ? $carts : Cart::with('product')->where('customer_id', $customer['id'])->get();
 
         $total_price = 0;
         $num = 0;

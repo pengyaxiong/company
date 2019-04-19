@@ -161,6 +161,7 @@ class PhotoController extends Controller
      * 文件上传类
      * @param Request $request
      * @return array
+     * @throws \Exception
      */
     public function upload_img(Request $request)
     {
@@ -186,18 +187,17 @@ class PhotoController extends Controller
 
             //绝对路径
             $file_path = storage_path('app/') . $path;
-
-
-            $url = '/storage/' . $path;
+            //保存到本地
+            //$url = '/storage/' . $path;
             //保存到七牛
-            //qiniu_upload($file_path);
+            qiniu_upload($file_path);
 
             //返回文件名
-            // $image = basename($path);
+             $image = basename($path);
 
-            // return ['status' => 1, 'image' => $image, 'image_url' => env('QINIU_IMAGES_LINK') . $image];
-
-            return ['status' => 1, 'image' => $url, 'image_url' => $url];
+            return ['status' => 1, 'image' => $image, 'image_url' => env('QINIU_IMAGES_LINK') . $image];
+            //保存到本地
+           // return ['status' => 1, 'image' => $url, 'image_url' => $url];
         }
     }
 

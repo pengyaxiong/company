@@ -108,7 +108,7 @@ class OrderController extends Controller
     {
         $order = Order::find($request->id);
         $order->status = 3;
-        $order->picking_time = Carbon\Carbon::now();
+        $order->picking_time = date('Y-m-d H:m:s', time());
         $order->save();
 
     }
@@ -123,7 +123,7 @@ class OrderController extends Controller
         $order = Order::find($request->id);
         if ($request->status == 3) {
             $order->status = 4;
-            $order->shipping_time = Carbon\Carbon::now();
+            $order->shipping_time = date('Y-m-d H:m:s', time());
         }
 
         $order->express_code = $request->express_code;
@@ -141,7 +141,7 @@ class OrderController extends Controller
     {
         $order = Order::find($request->id);
         $order->status = 5;
-        $order->finish_time = Carbon\Carbon::now();
+        $order->finish_time = date('Y-m-d H:m:s', time());
         $order->save();
 
     }

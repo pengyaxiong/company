@@ -119,13 +119,13 @@
                                                 <i class="am-icon-cloud-upload" id="loading"></i> 上传新的缩略图
                                             </button>
                                             <input type="file" id="image_upload">
-                                            <input type="hidden" name="image" value="{{$product->photo->link}}">
+                                            <input type="hidden" name="image" value="{{$product->photo->identifier}}">
                                         </div>
 
                                         <hr data-am-widget="divider" style="" class="am-divider am-divider-dashed"/>
 
                                         <div>
-                                            {!! image_url($product->photo, ['id'=>'img_show']) !!}
+                                            {!! image_url($product, ['id'=>'img_show']) !!}
                                         </div>
                                     </div>
                                 </div>
@@ -208,8 +208,8 @@
                                     @foreach($product->product_galleries as $gallery)
                                         <li>
                                             <div class="am-gallery-item">
-                                                <a href="{{$gallery->link}}" class="">
-                                                    <img src="{{$gallery->link}}"/>
+                                                <a href="/uploads/{{$gallery->photo}}" class="">
+                                                    <img src="/uploads/{{$gallery->photo}}"/>
                                                 </a>
                                                 <div class="file-panel">
                                                     <span class="cancel" data-id="{{$gallery->id}}">删除</span>
@@ -277,7 +277,7 @@
                 var _this = $(this);
                 $.ajax({
                     type: "delete",
-                    url: "/admin/shop/product/destroy_gallery",
+                    url: "/shop/product/destroy_gallery",
                     data: {gallery_id: _this.data('id')},
                     success: function (data) {
                         if (data.status == 0) {

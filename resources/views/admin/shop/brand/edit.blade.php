@@ -49,13 +49,13 @@
                         </button>
 
                         <input type="file" id="image_upload">
-                        <input type="hidden" name="image" value="{{$brand->image}}">
+                        <input type="hidden" name="image" value="{{$brand->photo->identifier}}">
                     </div>
 
                     <hr data-am-widget="divider" style="" class="am-divider am-divider-dashed"/>
 
                     <div>
-                        <img id="img_show" src="{{$brand->photo->thumb}}" alt="">
+                        <img id="img_show" src="{{$brand->photo->identifier}}" alt="">
                     </div>
                 </div>
             </div>

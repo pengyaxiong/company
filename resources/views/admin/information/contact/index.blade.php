@@ -36,8 +36,8 @@
                         <tr>
                             <th class="table-id">编号</th>
                             <th class="table-title">姓名</th>
-                            <th class="table-url">邮箱地址</th>
-                            <th class="table-desc">爱好</th>
+                            <th class="table-url">昵称</th>
+                            <th class="table-desc">手机号</th>
                             <th class="table-name">反馈</th>
                             <th class="table-name">反馈时间</th>
                             <th class="table-set">操作</th>
@@ -52,9 +52,9 @@
                                     {{$contact->name}}
                                 </td>
 
-                                <td>{{$contact->email}}</td>
+                                <td>{{$contact->nickname}}</td>
 
-                                <td>{{$contact->interest}}</td>
+                                <td>{{$contact->mobile}}</td>
 
                                 <td>{{$contact->contact}}</td>
 

@@ -68,6 +68,11 @@ class Kernel extends HttpKernel
         'role' => \App\Http\Middleware\Role::class,
         //UV统计
         'uv' => \App\Http\Middleware\UV::class,
+
+        //微信
+        'wechat.oauth' => \Overtrue\LaravelWeChat\Middleware\OAuthAuthenticate::class,
+        'wechat' => \App\Http\Middleware\Wechat::class,
+
     ];
 
     /**
