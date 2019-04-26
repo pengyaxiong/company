@@ -24,8 +24,7 @@ class MenuController extends Controller
      */
     function edit()
     {
-        $menus = $this->menu->list();
-        return $menus;
+        //$menus = $this->menu->list();
         try {
             $buttons = Cache::rememberForever('wechat_config_menus', function () {
                 $current = $this->menu->current();
@@ -33,6 +32,11 @@ class MenuController extends Controller
             });
         } catch (HttpException $e) {
             $buttons = [];
+        }
+        $b_c = count($buttons);
+
+        for ($i = $b_c; $i < 3; $i++) {
+            $buttons[$i] = array('type' => 'view', 'name' => '未设置');
         }
 
         return view('admin.wechat.menu.edit', compact('buttons'));
